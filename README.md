@@ -5,9 +5,32 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 ## Game
 
 
+## Todo
+
+* Split bulb from lamp
+* Split drawers and build drawer volume
+* Actions
+  * Pickup object
+  * Open
+* Inventory System
+  * Lamp
+  * Key
+* Puzzle Logic system
+  * Open drawer
+  * Get bulb
+  * Use bulb on lamp
+  * Pickup key
+  * Use key on door
+  * Door open
+* Display inventory
+* Design game
+* VR
+
+
 ## Art
 
 - [90's Bedroom](https://www.fab.com/listings/0d3898ce-4ed8-4558-a3fd-56342f9944e4) by [Robinson](https://www.fab.com/sellers/Robinson), licensed through the [Fab Standard License] license, purchased
+- [Kilppad Dawn 1](https://polyhaven.com/a/klippad_dawn_1) by [Greg Zaal](https://gregzaal.com/), licensed through [CC0]
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
