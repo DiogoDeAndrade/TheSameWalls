@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:01,080
+Caleb!
+
+2
+00:00:01,480 --> 00:00:03,760
+Come on, you’re gonna be late for school!
+
+3
+00:00:03,760 --> 00:00:06,760
+And don’t forget your jacket — it’s cold out today.
+

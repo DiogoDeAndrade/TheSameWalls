@@ -7,11 +7,12 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Split bulb from lamp
-* Split drawers and build drawer volume
+* Add clothes around the room
+* Create voices (ElevenLabs)
 * Actions
   * Pickup object
   * Open
+  * Inspect (look)
 * Inventory System
   * Lamp
   * Key
@@ -35,6 +36,7 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Sound
 
+- Voices by [ElevenLab](https://elevenlabs.io/)
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Code
