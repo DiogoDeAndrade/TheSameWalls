@@ -8,7 +8,7 @@ using UnityEngine;
 public static class PBRMaterialPacker
 {
     // ---------- Context menu ----------
-    [MenuItem("Assets/One Room Tools/PBR Material Packer", priority = 2000)]
+    [MenuItem("Assets/One Room/PBR Material Packer", priority = 2000)]
     private static void PackSelectedMaterials()
     {
         var objs = Selection.objects;
@@ -83,7 +83,7 @@ public static class PBRMaterialPacker
         Debug.Log($"[PBR] Processed {done} material(s), skipped {skipped}.");
     }
 
-    [MenuItem("Assets/One Room Tools/PBR Material Packer", true)]
+    [MenuItem("Assets/One Room/PBR Material Packer", true)]
     private static bool PackSelectedMaterials_Validate()
         => Selection.objects.Any(o => AssetDatabase.GetMainAssetTypeAtPath(AssetDatabase.GetAssetPath(o)) == typeof(Material));
 

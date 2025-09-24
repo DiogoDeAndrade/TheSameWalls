@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5be65d07090f74b8f0c41929d132aa, type: 3}
+  m_Name: GameOptions
+  m_EditorClassIdentifier: Assembly-CSharp::GameOptions
+  dyslexicMode: 0
+  textScale: 1
+  normalFont: {fileID: 11400000, guid: c97155898e485d04180bf5b31f24ded6, type: 2}
+  normalMaterial: {fileID: 2100000, guid: ac55f399c6693ab4ca256b6171f9b5fc, type: 2}
+  dyslexicFont: {fileID: 11400000, guid: ff9e53fe1d45af74aa5f7ae82809a898, type: 2}
+  dyslexicMaterial: {fileID: 2100000, guid: d4db40b69efedf148927957738b017b7, type: 2}

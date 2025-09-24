@@ -14,6 +14,11 @@ public class OnEvent : MonoBehaviour
             }
         }
 
+        foreach (var t in triggers)
+        {
+            t.SetTriggered();
+        }
+
         foreach (var a in actions)
         {
             a.Execute(gameObject);

@@ -4,9 +4,12 @@ using System;
 
 public class ActManager : MonoBehaviour
 {
-    [SerializeField] private Hypertag[] activeTags;
+    [SerializeField] private Hypertag[]     activeTags;
+
+    private float _timeFromStart = 0.0f;
 
     public static ActManager Instance;
+    public float timeFromStart => _timeFromStart;
 
     private void Awake()
     {
@@ -20,7 +23,16 @@ public class ActManager : MonoBehaviour
 
     void Start()
     {
-        TriggerEvent(new Trigger_Start());
+        _timeFromStart = 0.0f;
+
+        UpdateFonts();
+    }
+
+    private void Update()
+    {
+        _timeFromStart += Time.deltaTime;
+        TriggerEvent(null);
+        UpdateFonts();
     }
 
     public bool IsTagged(Hypertag tag)
@@ -41,4 +53,11 @@ public class ActManager : MonoBehaviour
             handler.TriggerEvent(trigger);
         }
     }
+
+    void UpdateFonts()
+    {
+        var options = GameManager.GameOptions;
+        SubtitleDisplayManager.Instance?.SetFont(options.GetTextFont(), options.GetTextMaterial(), options.textScale);
+    }
 }
+

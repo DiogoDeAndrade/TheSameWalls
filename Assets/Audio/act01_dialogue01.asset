@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c5a5bec15423a4b8b6652c02b2666d, type: 3}
+  m_Name: act01_dialogue01
+  m_EditorClassIdentifier: Assembly-CSharp::SoundDef
+  clip: {fileID: 8300000, guid: eaeb0a1637cde964cb9fd058bc7d399b, type: 3}
+  soundType: 4
+  loop: 0
+  subtitleTrack: {fileID: 3778455083779103953, guid: 8c84ea3ef650b1947ab1d1ecc8a05a65, type: 3}
+  speaker: {fileID: 11400000, guid: c1c98f65358e86c499e10f4fbf4089f5, type: 2}
+  volumeRange: {x: 1, y: 1}
+  pitchRange: {x: 1, y: 1}
