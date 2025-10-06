@@ -1,10 +1,11 @@
 using UnityEngine;
 using UC;
 using System;
+using WSKit;
 
 public class ActManager : MonoBehaviour
 {
-    [SerializeField] private Hypertag[]     activeTags;
+    [SerializeField] private Hypertag[]     activeTokens;
 
     private float _timeFromStart = 0.0f;
 
@@ -26,6 +27,10 @@ public class ActManager : MonoBehaviour
         _timeFromStart = 0.0f;
 
         UpdateFonts();
+
+        var tokenManager = FindFirstObjectByType<TokenManager>();
+        foreach (var t in activeTokens)
+            tokenManager?.Add(t);
     }
 
     private void Update()
@@ -35,17 +40,7 @@ public class ActManager : MonoBehaviour
         UpdateFonts();
     }
 
-    public bool IsTagged(Hypertag tag)
-    {
-        foreach (var t in activeTags)
-        {
-            if (t == tag) return true;
-        }
-
-        return false;
-    }
-
-    void TriggerEvent(Trigger trigger)
+    void TriggerEvent(Condition trigger)
     {
         var allEventHandlers = FindObjectsByType<OnEvent>(FindObjectsSortMode.None);
         foreach (var handler in allEventHandlers)

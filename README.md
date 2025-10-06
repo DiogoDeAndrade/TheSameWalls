@@ -8,9 +8,10 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 ## Todo
 
 * Actions
+  * Game actions with wait cycle
+  * Wait for mom to talk before making door available
   * Pickup object
-  * Open
-  * Inspect (look)
+  * Run animation
 * Inventory System
   * Lamp
   * Key
@@ -24,7 +25,6 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 * Display inventory
 * Design game
 * VR
-
 
 ## Art
 

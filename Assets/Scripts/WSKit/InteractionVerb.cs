@@ -6,5 +6,4 @@ public class InteractionVerb : ScriptableObject
 {
     public string       displayName;
     public CursorDef    cursorDef;
-    public int          priority = 0;
 }
