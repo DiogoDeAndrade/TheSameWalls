@@ -87,8 +87,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6664109775479673827}
   - component: {fileID: 3811793173494450206}
+  - component: {fileID: 7297538717662998470}
   m_Layer: 0
-  m_Name: ActManager (Room 01)
+  m_Name: ActManager (Act1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,3 +125,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeTokens:
   - {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
+--- !u!114 &7297538717662998470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575549124373339123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f6442d94df4194db49dc56808e8227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

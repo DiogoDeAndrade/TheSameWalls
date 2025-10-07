@@ -5,7 +5,7 @@ using UnityEngine;
 namespace WSKit.Editor
 {
     [CustomPropertyDrawer(typeof(GameAction_SetMaterialProperty))]
-    public class GameActionSetMaterialPropertyDrawer : BaseGameActionDrawer
+    public class GameAction_SetMaterialPropertyDrawer : BaseGameActionDrawer
     {
         const float Pad = 2f;
 

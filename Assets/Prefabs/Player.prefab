@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5282721864531936061}
   - component: {fileID: 8318246868865890367}
   - component: {fileID: 4234717954876003717}
+  - component: {fileID: 1748897659959724545}
+  - component: {fileID: 874270923544808146}
+  - component: {fileID: 7604839185624643200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -26,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5587027834930626948}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9495285, z: -0, w: 0.31368092}
+  m_LocalRotation: {x: 0, y: -0.9495296, z: 0, w: 0.31367764}
   m_LocalPosition: {x: 0.281, y: 0.051, z: 0.987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -79,6 +82,69 @@ MonoBehaviour:
   stepDistance: 1
   stepVolume: {x: 1, y: 1}
   stepPitch: {x: 1, y: 1}
+--- !u!114 &1748897659959724545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587027834930626948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &874270923544808146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587027834930626948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444039ff3b19594439b0c9ac42f3ca2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limited: 0
+  maxSlots: 9
+--- !u!114 &7604839185624643200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587027834930626948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff993c330e3e8648abe3974411d1e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedInventory: {fileID: 874270923544808146}
+  availableSlots:
+  - {fileID: 11400000, guid: e10c6094de08e694a8499c18068eaf76, type: 2}
+  combatTextEnable: 0
+  combatTextDuration: 1
+  combatTextEquippedItemColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  combatTextUnequippedItemColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &5841189621657061726
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5739431054991821870}
+  - component: {fileID: 7338894050641591026}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -111,6 +178,34 @@ Transform:
   - {fileID: 5608855696070680161}
   m_Father: {fileID: 5282721864531936061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7338894050641591026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841189621657061726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd7298ff520fcd4dbd78beaf30eb310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionEnabled: 1
+  masterInteractionObject: {fileID: 5587027834930626948}
+  interactionRange: 1.3
+  raycastRadius: 0.025
+  interactionLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  playerInput: {fileID: 1748897659959724545}
+  interactControl:
+    _type: 3
+    axis: Horizontal
+    buttonPositive: Right
+    buttonNegative: Left
+    keyPositive: 275
+    keyNegative: 276
+    inputAction: Interact
 --- !u!1 &7817009331978299386
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +250,7 @@ Camera:
   m_GameObject: {fileID: 7817009331978299386}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
