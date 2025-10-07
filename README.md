@@ -7,11 +7,11 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Add clothes around the room
 * Actions
+  * Game actions with wait cycle
+  * Wait for mom to talk before making door available
   * Pickup object
-  * Open
-  * Inspect (look)
+  * Run animation
 * Inventory System
   * Lamp
   * Key
@@ -26,10 +26,12 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 * Design game
 * VR
 
-
 ## Art
 
 - [90's Bedroom](https://www.fab.com/listings/0d3898ce-4ed8-4558-a3fd-56342f9944e4) by [Robinson](https://www.fab.com/sellers/Robinson), licensed through the [Fab Standard License] license, purchased
+- [Pile Of Clothes](https://skfb.ly/oWUEu) by Neoniclide, licensed through [CC-BY 4.0]
+- [Laundry Basket 1  - 3D Scan](https://skfb.ly/owosP) by Alben Tan, licensed through [CC-BY 4.0]
+- [pile of clothes](https://skfb.ly/oSnQX) by vicente betoret ferrero, licensed through [CC-BY 4.0]
 - [Kilppad Dawn 1](https://polyhaven.com/a/klippad_dawn_1) by [Greg Zaal](https://gregzaal.com/), licensed through [CC0]
 - Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
 - Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.

@@ -145,23 +145,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 4
   m_UsePipelineSettings: 0
   m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 3
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
 --- !u!1 &769909160669739124
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +294,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -323,7 +315,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -362,31 +353,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggers:
-  - rid: 239963473683153096
-  - rid: 239963429955436604
+  conditions:
+  - rid: 7403207655054901314
   actions:
-  - rid: 239963429955436605
+  - rid: 7403207655054901315
   references:
     version: 2
     RefIds:
-    - rid: 239963429955436604
-      type: {class: Trigger_Tag, ns: , asm: Assembly-CSharp}
+    - rid: 7403207655054901314
+      type: {class: Condition_Token, ns: WSKit, asm: Assembly-CSharp}
       data:
-        tag: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
-    - rid: 239963429955436605
-      type: {class: GameAction_SetMaterialProperty, ns: , asm: Assembly-CSharp}
+        negate: 0
+        token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
+    - rid: 7403207655054901315
+      type: {class: GameAction_SetMaterialProperty, ns: WSKit, asm: Assembly-CSharp}
       data:
         type: 1
         propName: _EmissionColor
-        color: {r: 1.045493, g: 1.2954562, b: 1.5090986, a: 1}
+        color: {r: 1.020428, g: 1.1248672, b: 1.205689, a: 1}
         vector: {x: 0, y: 0, z: 0, w: 0}
         fValue: 0
         texture: {fileID: 0}
-    - rid: 239963473683153096
-      type: {class: Trigger_TimeFromStart, ns: , asm: Assembly-CSharp}
-      data:
-        elapsedTime: 0
 --- !u!1 &3083438362760037477
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,8 +660,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -696,7 +681,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -797,8 +781,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -820,7 +802,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -887,8 +868,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -910,7 +889,6 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1612,6 +1590,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1791081806464688800, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1539681399094409237}
+    - targetCorrespondingSourceObject: {fileID: 1791081806464688800, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7779492179013675326}
     - targetCorrespondingSourceObject: {fileID: 3607225438368322466, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4776407674904869630}
@@ -1671,6 +1652,49 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008920772, y: 0.00032274175, z: 0.020100787}
   m_Center: {x: 0.004460389, y: -0.00016137087, z: 0.010050396}
+--- !u!114 &7779492179013675326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925996109398948588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5bf9a15902c16e449e14a28963a6181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionVerb: {fileID: 11400000, guid: 92d2b20c201ce954f86dfdab16414e2f, type: 2}
+  _priority: 0
+  overrideCursor: 1
+  cursorDef:
+    cursor: {fileID: 21300000, guid: a626fcaf74abd8249a2959bb63f52835, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: {x: 0, y: 0}
+  conditions:
+  - rid: 7403207655808565309
+  - rid: 7403207655808565310
+  actions:
+  - rid: 7403207655808565311
+  cooldown: 2
+  canRetrigger: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7403207655808565309
+      type: {class: Condition_Token, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
+    - rid: 7403207655808565310
+      type: {class: Condition_HasItem, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 1
+        item: {fileID: 11400000, guid: ea085964011f2484d85ae287bd057f2a, type: 2}
+    - rid: 7403207655808565311
+      type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        sound: {fileID: 11400000, guid: 15455ba222b62f5468eb0f25309b5c1f, type: 2}
 --- !u!1 &3283855497491183150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7074429673900020126, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}

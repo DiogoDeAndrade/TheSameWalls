@@ -46,16 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OnEvent
   triggers:
   - rid: 239963473683153094
-  - rid: 239963473683153092
+  - rid: 7403207650715631805
   actions:
   - rid: 239963473683153093
   references:
     version: 2
     RefIds:
-    - rid: 239963473683153092
-      type: {class: Trigger_Tag, ns: , asm: Assembly-CSharp}
-      data:
-        tag: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
     - rid: 239963473683153093
       type: {class: GameAction_PlaySound, ns: , asm: Assembly-CSharp}
       data:
@@ -64,6 +60,10 @@ MonoBehaviour:
       type: {class: Trigger_TimeFromStart, ns: , asm: Assembly-CSharp}
       data:
         elapsedTime: 2
+    - rid: 7403207650715631805
+      type: {class: Trigger_Token, ns: , asm: Assembly-CSharp}
+      data:
+        token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
 --- !u!1 &6575549124373339123
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,5 +109,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbe7d52374d4d949a97c9a002923978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTags:
+  activeTokens:
   - {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
