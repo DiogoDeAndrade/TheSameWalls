@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57e6711868d9d9842af352cc128afa00, type: 3}
-  m_Name: VerbOpen
+  m_Name: VerbPickup
   m_EditorClassIdentifier: 
-  displayName: Open
+  displayName: Pickup
   cursorDef:
-    cursor: {fileID: 21300000, guid: 93ee114877a3c96449b165b3a0b1c210, type: 3}
+    cursor: {fileID: 21300000, guid: 53c615bac9641a549a25d1c7803a027b, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: {x: 0, y: 0}

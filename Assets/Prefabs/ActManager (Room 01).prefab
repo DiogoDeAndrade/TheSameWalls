@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _referenceObject: {fileID: 0}
   conditions:
   - rid: 2624497038681178187
   - rid: 2624497038681178188
@@ -66,11 +67,13 @@ MonoBehaviour:
     - rid: 2624497038681178189
       type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
       data:
-        wait: 0
+        initialized: 1
+        wait: 1
         sound: {fileID: 11400000, guid: 6db1dcde42a0b6a498823c2b3bed25f8, type: 2}
     - rid: 2624497038681178192
       type: {class: GameAction_AddToken, ns: WSKit, asm: Assembly-CSharp}
       data:
+        initialized: 1
         wait: 0
         token: {fileID: 11400000, guid: 1cfdd677536540d479784a9f242a2547, type: 2}
         quantity: 1

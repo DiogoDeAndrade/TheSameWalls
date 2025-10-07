@@ -10,6 +10,7 @@ namespace WSKit.Editor
     [CustomEditor(typeof(OnEvent))]
     public class OnEventEditor : UnityEditor.Editor
     {
+        SerializedProperty _referenceObjectProp;
         SerializedProperty _conditionsProp;
         SerializedProperty _actionsProp;
 
@@ -18,6 +19,7 @@ namespace WSKit.Editor
 
         void OnEnable()
         {
+            _referenceObjectProp = serializedObject.FindProperty("_referenceObject");
             _conditionsProp = serializedObject.FindProperty("conditions");
             _actionsProp = serializedObject.FindProperty("actions");
 
@@ -29,6 +31,8 @@ namespace WSKit.Editor
         public override void OnInspectorGUI()
         {
             serializedObject.Update();
+
+            EditorGUILayout.PropertyField(_referenceObjectProp, new GUIContent("Reference Object"));
 
             EditorGUILayout.Space(4);
             _conditionsList.DoLayoutList();

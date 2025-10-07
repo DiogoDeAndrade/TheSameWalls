@@ -11,7 +11,11 @@ namespace WSKit
 
         protected override bool EvaluateThis(GameObject referenceObject)
         {
-            var inventory = referenceObject.GetComponent<Inventory>();
+            var inventory = GameObject.FindFirstObjectByType<Inventory>();
+            if (inventory == null)
+            {
+                Debug.LogWarning($"Can't find inventory.");
+            }
 
             return inventory?.HasItem(item) ?? false;
         }

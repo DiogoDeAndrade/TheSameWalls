@@ -8,7 +8,6 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 ## Todo
 
 * Actions
-  * Pickup object
   * Run animation
 * Inventory System
   * Lamp
@@ -31,6 +30,8 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 - [Laundry Basket 1  - 3D Scan](https://skfb.ly/owosP) by Alben Tan, licensed through [CC-BY 4.0]
 - [pile of clothes](https://skfb.ly/oSnQX) by vicente betoret ferrero, licensed through [CC-BY 4.0]
 - [Kilppad Dawn 1](https://polyhaven.com/a/klippad_dawn_1) by [Greg Zaal](https://gregzaal.com/), licensed through [CC0]
+- [Door icons](https://www.flaticon.com/free-icons/door) created by Good Ware - [Flaticon], free for personal and commercial use with attribution.
+- [Grab icons](https://www.flaticon.com/free-icons/grab) created by Freepik - [Flaticon], free for personal and commercial use with attribution.
 - Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
 - Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
@@ -63,5 +64,6 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 [Global Game Jam'25]:https://globalgamejam.org/
 [Wilson Almeida]:https://wilson.itch.io/
 [Fab Standard License]:https://www.fab.com/eula
+[Flaticon]:https://www.flaticon.com/
 [SIL-OFL]:https://openfontlicense.org/open-font-license-official-text/
 [MIT]:LICENSE

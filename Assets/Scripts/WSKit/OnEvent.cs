@@ -6,10 +6,13 @@ namespace WSKit
 
     public class OnEvent : MonoBehaviour
     {
+        [SerializeField] private GameObject _referenceObject;
         [SerializeReference] private Condition[] conditions;
         [SerializeReference] private GameAction[] actions;
 
         bool isRunning = false;
+
+        GameObject referenceObject => _referenceObject ? _referenceObject : gameObject;
 
         public void TriggerEvent(Condition trigger)
         {
@@ -17,7 +20,7 @@ namespace WSKit
 
             foreach (var t in conditions)
             {
-                if (!t.Evaluate(gameObject))
+                if (!t.Evaluate(referenceObject))
                 {
                     return;
                 }
@@ -41,7 +44,7 @@ namespace WSKit
                     continue;
 
                 // Run the action
-                IEnumerator routine = a.Execute(gameObject);
+                IEnumerator routine = a.Execute(referenceObject);
 
                 if ((a.shouldWait) && (routine != null))
                 {
