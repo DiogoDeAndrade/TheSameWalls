@@ -7,8 +7,8 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Actions
-  * Run animation
+* Trigger
+  * Go to next room
 * Inventory System
   * Lamp
   * Key
