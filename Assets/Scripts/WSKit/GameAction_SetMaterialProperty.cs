@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 namespace WSKit
@@ -19,7 +20,7 @@ namespace WSKit
         [SerializeField] private float fValue;
         [SerializeField] private Texture texture;
 
-        public override void Execute(GameObject go)
+        public override IEnumerator Execute(GameObject go)
         {
             Material material = null;
             Renderer renderer = go.GetComponent<Renderer>();
@@ -30,7 +31,7 @@ namespace WSKit
 
             if (material == null)
             {
-                return;
+                yield return null;
             }
 
             switch (type)
@@ -50,6 +51,8 @@ namespace WSKit
                 default:
                     break;
             }
+
+            yield return null;
         }
     }
 }

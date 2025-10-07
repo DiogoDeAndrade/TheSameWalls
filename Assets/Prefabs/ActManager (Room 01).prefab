@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614157026041618489}
-  - component: {fileID: 9149432169834088176}
+  - component: {fileID: 4692685804552028603}
   m_Layer: 0
   m_Name: Story
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6664109775479673827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9149432169834088176
+--- !u!114 &4692685804552028603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,27 +43,37 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OnEvent
-  triggers:
-  - rid: 239963473683153094
-  - rid: 7403207650715631805
+  m_EditorClassIdentifier: 
+  conditions:
+  - rid: 2624497038681178187
+  - rid: 2624497038681178188
   actions:
-  - rid: 239963473683153093
+  - rid: 2624497038681178189
+  - rid: 2624497038681178192
   references:
     version: 2
     RefIds:
-    - rid: 239963473683153093
-      type: {class: GameAction_PlaySound, ns: , asm: Assembly-CSharp}
+    - rid: 2624497038681178187
+      type: {class: Condition_TimeFromStart, ns: , asm: Assembly-CSharp}
       data:
-        sound: {fileID: 11400000, guid: 6db1dcde42a0b6a498823c2b3bed25f8, type: 2}
-    - rid: 239963473683153094
-      type: {class: Trigger_TimeFromStart, ns: , asm: Assembly-CSharp}
-      data:
+        negate: 0
         elapsedTime: 2
-    - rid: 7403207650715631805
-      type: {class: Trigger_Token, ns: , asm: Assembly-CSharp}
+    - rid: 2624497038681178188
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
       data:
+        negate: 0
         token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
+    - rid: 2624497038681178189
+      type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        wait: 0
+        sound: {fileID: 11400000, guid: 6db1dcde42a0b6a498823c2b3bed25f8, type: 2}
+    - rid: 2624497038681178192
+      type: {class: GameAction_AddToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        wait: 0
+        token: {fileID: 11400000, guid: 1cfdd677536540d479784a9f242a2547, type: 2}
+        quantity: 1
 --- !u!1 &6575549124373339123
 GameObject:
   m_ObjectHideFlags: 0

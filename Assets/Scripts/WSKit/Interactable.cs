@@ -1,4 +1,5 @@
 using NaughtyAttributes;
+using System.Collections;
 using UnityEngine;
 
 namespace WSKit
@@ -22,7 +23,8 @@ namespace WSKit
         [SerializeField]
         protected bool              canRetrigger = true;
 
-        float lastInteractionTime = float.NegativeInfinity;
+        float   lastInteractionTime = float.NegativeInfinity;
+        bool    isRunning = false;
 
         public CursorDef cursor
         {
@@ -39,17 +41,12 @@ namespace WSKit
 
         public virtual bool CanInteract(GameObject referenceObject)
         {
+            if (isRunning) return false;
             if ((!canRetrigger) && (lastInteractionTime >= 0)) return false;
-            if (cooldown > 0.0f)
+            if ((cooldown > 0.0f) && ((Time.time - lastInteractionTime) < cooldown))
             {
-                return (Time.time - lastInteractionTime) > cooldown;
+                return false;
             }
-
-            return true;
-        }
-
-        public bool Interact(GameObject referenceObject)
-        {
             if (conditions != null)
             {
                 foreach (var condition in conditions)
@@ -58,14 +55,42 @@ namespace WSKit
                 }
             }
 
-            foreach (var action in actions)
-            {
-                action.Execute(referenceObject);
-            }
+            return true;
+        }
 
-            lastInteractionTime = Time.time;
+        public bool Interact(GameObject referenceObject)
+        {
+            StartCoroutine(RunActionsCR());
 
             return true;
+        }
+
+        IEnumerator RunActionsCR()
+        {
+            isRunning = true;
+
+            foreach (var a in actions)
+            {
+                if (a == null)
+                    continue;
+
+                // Run the action
+                IEnumerator routine = a.Execute(gameObject);
+
+                if ((a.shouldWait) && (routine != null))
+                {
+                    // Wait for the coroutine to finish
+                    yield return routine;
+                }
+                else if (routine != null)
+                {
+                    // Run asynchronously, but don't wait
+                    StartCoroutine(routine);
+                }
+            }
+
+            isRunning = false;
+            lastInteractionTime = Time.time;
         }
     }
 }

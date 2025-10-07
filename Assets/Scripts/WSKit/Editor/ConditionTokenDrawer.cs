@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace WSKit.Editor
 {
-    [CustomPropertyDrawer(typeof(WSKit.Condition_Token))]
+    [CustomPropertyDrawer(typeof(WSKit.Condition_HasToken))]
     public class ConditionTokenDrawer : PropertyDrawer
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)

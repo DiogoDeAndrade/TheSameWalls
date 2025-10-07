@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UC;
+using System.Collections;
 
 namespace WSKit
 {
@@ -10,9 +11,22 @@ namespace WSKit
     {
         [SerializeField] private SoundDef sound;
 
-        public override void Execute(GameObject go)
+        protected override void SetDefaultValues()
         {
-            sound.Play();
+            wait = true; 
+        }
+
+        public override IEnumerator Execute(GameObject go)
+        {
+            var snd = sound.Play();
+
+            if (wait)
+            { 
+                while (snd.isPlaying)
+                {
+                    yield return null;
+                }
+            }
         }
     }
 }

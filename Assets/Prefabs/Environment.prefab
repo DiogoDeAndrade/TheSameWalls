@@ -354,20 +354,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conditions:
-  - rid: 7403207655054901314
+  - rid: 2624497038681178182
   actions:
   - rid: 7403207655054901315
   references:
     version: 2
     RefIds:
-    - rid: 7403207655054901314
-      type: {class: Condition_Token, ns: WSKit, asm: Assembly-CSharp}
+    - rid: 2624497038681178182
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
       data:
         negate: 0
         token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
     - rid: 7403207655054901315
       type: {class: GameAction_SetMaterialProperty, ns: WSKit, asm: Assembly-CSharp}
       data:
+        initialized: 1
+        wait: 0
         type: 1
         propName: _EmissionColor
         color: {r: 1.020428, g: 1.1248672, b: 1.205689, a: 1}
@@ -1592,7 +1594,7 @@ PrefabInstance:
       addedObject: {fileID: 1539681399094409237}
     - targetCorrespondingSourceObject: {fileID: 1791081806464688800, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7779492179013675326}
+      addedObject: {fileID: 6642838952008826998}
     - targetCorrespondingSourceObject: {fileID: 3607225438368322466, guid: ca4d1062211443548b17c7fafad8a7e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4776407674904869630}
@@ -1652,7 +1654,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008920772, y: 0.00032274175, z: 0.020100787}
   m_Center: {x: 0.004460389, y: -0.00016137087, z: 0.010050396}
---- !u!114 &7779492179013675326
+--- !u!114 &6642838952008826998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1672,28 +1674,36 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     size: {x: 0, y: 0}
   conditions:
-  - rid: 7403207655808565309
-  - rid: 7403207655808565310
+  - rid: 2624497038681178183
+  - rid: 2624497038681178184
+  - rid: 2624497038681178185
   actions:
-  - rid: 7403207655808565311
+  - rid: 2624497038681178195
   cooldown: 2
   canRetrigger: 1
   references:
     version: 2
     RefIds:
-    - rid: 7403207655808565309
-      type: {class: Condition_Token, ns: WSKit, asm: Assembly-CSharp}
+    - rid: 2624497038681178183
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
       data:
         negate: 0
         token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
-    - rid: 7403207655808565310
+    - rid: 2624497038681178184
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        token: {fileID: 11400000, guid: 1cfdd677536540d479784a9f242a2547, type: 2}
+    - rid: 2624497038681178185
       type: {class: Condition_HasItem, ns: WSKit, asm: Assembly-CSharp}
       data:
-        negate: 1
+        negate: 0
         item: {fileID: 11400000, guid: ea085964011f2484d85ae287bd057f2a, type: 2}
-    - rid: 7403207655808565311
+    - rid: 2624497038681178195
       type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
       data:
+        initialized: 1
+        wait: 1
         sound: {fileID: 11400000, guid: 15455ba222b62f5468eb0f25309b5c1f, type: 2}
 --- !u!1 &3283855497491183150 stripped
 GameObject:
