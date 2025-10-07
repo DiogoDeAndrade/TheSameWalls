@@ -31,7 +31,8 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 - [90's Bedroom](https://www.fab.com/listings/0d3898ce-4ed8-4558-a3fd-56342f9944e4) by [Robinson](https://www.fab.com/sellers/Robinson), licensed through the [Fab Standard License] license, purchased
 - [Kilppad Dawn 1](https://polyhaven.com/a/klippad_dawn_1) by [Greg Zaal](https://gregzaal.com/), licensed through [CC0]
-- Font [Noto Sans] by Google, licensed through the [OFL] license.
+- Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
+- Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
@@ -62,5 +63,5 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 [Global Game Jam'25]:https://globalgamejam.org/
 [Wilson Almeida]:https://wilson.itch.io/
 [Fab Standard License]:https://www.fab.com/eula
-[OFL]:https://openfontlicense.org/open-font-license-official-text/
+[SIL-OFL]:https://openfontlicense.org/open-font-license-official-text/
 [MIT]:LICENSE
