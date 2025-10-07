@@ -243,7 +243,6 @@ GameObject:
   - component: {fileID: 5063014555120485084}
   - component: {fileID: 6725988991508078103}
   - component: {fileID: 5124851763662003099}
-  - component: {fileID: 2501641710110316998}
   m_Layer: 0
   m_Name: OutsideLight (Window)
   m_TagString: Untagged
@@ -341,41 +340,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2501641710110316998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487825588889500662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  conditions:
-  - rid: 2624497038681178182
-  actions:
-  - rid: 7403207655054901315
-  references:
-    version: 2
-    RefIds:
-    - rid: 2624497038681178182
-      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
-      data:
-        negate: 0
-        token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
-    - rid: 7403207655054901315
-      type: {class: GameAction_SetMaterialProperty, ns: WSKit, asm: Assembly-CSharp}
-      data:
-        initialized: 1
-        wait: 0
-        type: 1
-        propName: _EmissionColor
-        color: {r: 1.020428, g: 1.1248672, b: 1.205689, a: 1}
-        vector: {x: 0, y: 0, z: 0, w: 0}
-        fValue: 0
-        texture: {fileID: 0}
 --- !u!1 &3083438362760037477
 GameObject:
   m_ObjectHideFlags: 0

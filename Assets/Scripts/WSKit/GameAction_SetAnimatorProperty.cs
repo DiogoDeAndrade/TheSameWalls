@@ -20,10 +20,10 @@ namespace WSKit
             {
                 if (animator == null) return null;
                 var propHash = Animator.StringToHash(propName);
-                var parameter = animator.GetParameterByHash(propHash);
-                if (parameter == null) return null;
+                if (!animator.GetParameterByHash(propHash, out var parameterType))
+                    return null;
 
-                return parameter.type;
+                return parameterType;
             }
         }
 
@@ -37,17 +37,14 @@ namespace WSKit
             else
             {
                 var propHash = Animator.StringToHash(propName);
-                var parameter = animator.GetParameterByHash(propHash);
-                if (parameter == null)
+                if (!animator.GetParameterByHash(propHash, out var parameterType))
                 {
-                    Debug.LogWarning($"Animator not setup on action {go.name}!");
+                    Debug.LogWarning($"Parameter {propName} not setup on animator in {animator.name}!");
                     yield return null;
                 }
                 else
                 {
-                    var type = parameter.type;
-
-                    switch (type)
+                    switch (parameterType)
                     {
                         case AnimatorControllerParameterType.Float:
                             animator.SetFloat(propName, fValue);

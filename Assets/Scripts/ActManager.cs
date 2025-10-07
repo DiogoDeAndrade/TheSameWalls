@@ -1,10 +1,9 @@
 using UnityEngine;
 using UC;
-using System;
-using WSKit;
 
 public class ActManager : MonoBehaviour
 {
+    [SerializeField] private WSKit.EventType    startEvent;
     [SerializeField] private Hypertag[]     activeTokens;
 
     private float _timeFromStart = 0.0f;
@@ -36,17 +35,8 @@ public class ActManager : MonoBehaviour
     private void Update()
     {
         _timeFromStart += Time.deltaTime;
-        TriggerEvent(null);
+        WSKit.OnEvent.TriggerEvent(startEvent);
         UpdateFonts();
-    }
-
-    void TriggerEvent(Condition trigger)
-    {
-        var allEventHandlers = FindObjectsByType<OnEvent>(FindObjectsSortMode.None);
-        foreach (var handler in allEventHandlers)
-        {
-            handler.TriggerEvent(trigger);
-        }
     }
 
     void UpdateFonts()
