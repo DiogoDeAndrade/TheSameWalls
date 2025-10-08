@@ -1,0 +1,68 @@
+﻿1
+00:00:00,000 --> 00:00:07,640
+ *RING*
+
+2
+00:00:07,640 --> 00:00:08,580
+ Hello? 
+
+3
+00:00:09,720 --> 00:00:14,300
+Oh — Doctor, hi!
+Yes, I was just about to call you back.
+
+4
+00:00:16,620 --> 00:00:19,700
+The results came in already?
+That was fast…
+
+5
+00:00:21,660 --> 00:00:23,500
+…oh. I see...
+
+6
+00:00:23,500 --> 00:00:26,500
+So it’s… definitely that, then?
+
+7
+00:00:28,420 --> 00:00:31,800
+How… how bad are we talking?
+
+8
+00:00:33,060 --> 00:00:38,980
+No, I— I’m fine, just…
+I thought maybe it could still be something simple, you know?
+
+9
+00:00:42,340 --> 00:00:46,120
+ Right.
+So we’ll have to start treatment right away?
+
+10
+00:00:49,060 --> 00:00:53,260
+Okay… yes.
+I’ll… I’ll come in tomorrow morning.
+
+11
+00:00:56,940 --> 00:00:58,540
+Thanks for your concern... 
+
+12
+00:00:58,540 --> 00:01:02,640
+We haven't told him yet, we... 
+We haven’t found the right moment..
+
+13
+00:01:05,240 --> 00:01:09,940
+Alright. Thank you, Doctor. Really...
+Yes, I'll see you first thing in the morning...
+
+14
+00:01:12,880 --> 00:01:15,340
+Caleb!
+Have you finished your homework?!
+
+15
+00:01:15,340 --> 00:01:18,340
+  We're going for pizza tonight!
+
