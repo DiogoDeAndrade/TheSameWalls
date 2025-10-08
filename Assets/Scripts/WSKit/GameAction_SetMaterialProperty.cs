@@ -13,12 +13,12 @@ namespace WSKit
             Float, Color, Vector, Texture
         };
 
-        [SerializeField] private Type type;
-        [SerializeField] private string propName;
-        [SerializeField] private Color color;
-        [SerializeField] private Vector4 vector;
-        [SerializeField] private float fValue;
-        [SerializeField] private Texture texture;
+        [SerializeField] private Type       type;
+        [SerializeField] private string     propName;
+        [SerializeField] private Color      color;
+        [SerializeField] private Vector4    vector;
+        [SerializeField] private float      fValue;
+        [SerializeField] private Texture    texture;
 
         public override IEnumerator Execute(GameObject go)
         {

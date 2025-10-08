@@ -7,19 +7,19 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Trigger
-  * Go to next room
 * Inventory System
-  * Lamp
-  * Key
-* Puzzle Logic system
-  * Open drawer
+* Act 2
+  * Tidy desk
+  * Turn on lamp
+  * Find screwdriver
+  * Open lava lamp
   * Get bulb
   * Use bulb on lamp
-  * Pickup key
-  * Use key on door
-  * Door open
-* Display inventory
+  * Find notebook and pen
+  * Find book
+  * Find keepsake
+  * Write homework
+  * Leave room
 * Design game
 * VR
 
@@ -32,6 +32,7 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 - [Kilppad Dawn 1](https://polyhaven.com/a/klippad_dawn_1) by [Greg Zaal](https://gregzaal.com/), licensed through [CC0]
 - [Door icons](https://www.flaticon.com/free-icons/door) created by Good Ware - [Flaticon], free for personal and commercial use with attribution.
 - [Grab icons](https://www.flaticon.com/free-icons/grab) created by Freepik - [Flaticon], free for personal and commercial use with attribution.
+- [Research icons](https://www.flaticon.com/free-icons/research) created by ibrandify - [Flaticon], free for personal and commercial use with attribution.
 - Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
 - Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.

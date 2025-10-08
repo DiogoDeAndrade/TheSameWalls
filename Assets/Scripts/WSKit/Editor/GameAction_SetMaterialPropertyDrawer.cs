@@ -37,7 +37,7 @@ namespace WSKit.Editor
 
             // Line 1: Type (left) + Wait (right)
             SplitForWait(r, out var left, out var wait);
-            EditorGUI.PropertyField(left, typeProp, new GUIContent("Type"));
+            EditorGUI.PropertyField(left, typeProp, new GUIContent("Change Material Property"));
             DrawWait(wait, property);
             r = NextLine(r);
 

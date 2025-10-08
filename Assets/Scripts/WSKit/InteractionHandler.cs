@@ -21,6 +21,8 @@ namespace WSKit
         private PlayerInput        playerInput;
         [SerializeField, InputPlayer(nameof(playerInput)), InputButton] 
         private UC.InputControl    interactControl;
+        [SerializeField]
+        private bool               debugMode;
 
         CursorManager cursorManager;
         GameObject    referenceObject => masterInteractionObject ? masterInteractionObject : gameObject;
@@ -35,8 +37,10 @@ namespace WSKit
         {
             if (!interactionEnabled) return;
 
-            var hits = Physics.SphereCastAll(transform.position, raycastRadius, transform.forward, interactionRange, interactionLayers);
+            var hits = Physics.SphereCastAll(transform.position, raycastRadius, transform.forward, interactionRange, interactionLayers, QueryTriggerInteraction.Collide);
             Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+
+            if (debugMode) Debug.Log($"Spherecast hits = {hits.Length}");
 
             Interactable[] interactables = null;
             Interactable activeInteraction = null;
@@ -46,6 +50,8 @@ namespace WSKit
                 var localInteractables = hit.collider.GetComponentsInChildren<Interactable>();
                 if (localInteractables.Length > 0)
                 {
+                    if (debugMode) Debug.Log($"Object {hit.collider.name} has {localInteractables.Length} interactables...");
+
                     Array.Sort(localInteractables, (a, b) => b.priority.CompareTo(a.priority));
 
                     // Check if any is interactable
@@ -59,8 +65,14 @@ namespace WSKit
 
                         if (activeInteraction)
                         {
+                            if (debugMode) Debug.Log($"Interactable {activeInteraction.name}  is interactable");
+
                             interactables = localInteractables;
                             break;
+                        }
+                        else
+                        {
+                            if (debugMode) Debug.Log($"Interactable {activeInteraction.name} is NOT interactable");
                         }
                     }
                 }
@@ -77,6 +89,8 @@ namespace WSKit
                 // Interact
                 if (interactControl.IsDown())
                 {
+                    if (debugMode) Debug.Log($"Interacting with {activeInteraction.name}...");
+
                     activeInteraction.Interact(referenceObject);
                 }
             }
@@ -93,6 +107,11 @@ namespace WSKit
         {
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, interactionRange);
+
+            if (debugMode)
+            {
+                Gizmos.DrawLine(transform.position, transform.position + transform.forward * interactionRange);
+            }
         }
     }
 }
