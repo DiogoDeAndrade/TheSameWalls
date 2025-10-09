@@ -14,6 +14,8 @@ namespace WSKit.Editor
         SerializedProperty _referenceObjectProp;
         SerializedProperty _conditionsProp;
         SerializedProperty _actionsProp;
+        SerializedProperty _retriggerProp;
+        SerializedProperty _cooldownProp;
 
         ReorderableList _conditionsList;
         ReorderableList _actionsList;
@@ -24,6 +26,8 @@ namespace WSKit.Editor
             _referenceObjectProp = serializedObject.FindProperty("_referenceObject");
             _conditionsProp = serializedObject.FindProperty("conditions");
             _actionsProp = serializedObject.FindProperty("actions");
+            _retriggerProp = serializedObject.FindProperty("retrigger");
+            _cooldownProp = serializedObject.FindProperty("cooldown");
 
             _conditionsList = ManagedReferenceListHelper.Build(serializedObject, _conditionsProp, typeof(Condition), "Conditions", "Add Condition", "No Conditions");
 
@@ -36,6 +40,11 @@ namespace WSKit.Editor
 
             EditorGUILayout.PropertyField(_eventTypeProp, new GUIContent("Event Type"));
             EditorGUILayout.PropertyField(_referenceObjectProp, new GUIContent("Reference Object"));
+            EditorGUILayout.PropertyField(_retriggerProp, new GUIContent("Retrigger?"));
+            if (_retriggerProp.boolValue)
+            {
+                EditorGUILayout.PropertyField(_cooldownProp, new GUIContent("Cooldown"));
+            }
 
             EditorGUILayout.Space(4);
             _conditionsList.DoLayoutList();

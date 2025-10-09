@@ -1,5 +1,83 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4415853629189572192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511158570107430249}
+  - component: {fileID: 2056660570517191123}
+  m_Layer: 0
+  m_Name: AllTidy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511158570107430249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415853629189572192}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8974331638034252183}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056660570517191123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415853629189572192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventType: {fileID: 11400000, guid: 8de82f45915d59448a6bfb95bcff7f04, type: 2}
+  _referenceObject: {fileID: 0}
+  conditions:
+  - rid: 2624497085223534688
+  actions:
+  - rid: 2624497038681178189
+  retrigger: 0
+  cooldown: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2624497038681178189
+      type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        sound: {fileID: 11400000, guid: 34aea856b827e1a479e95c89cd6c0310, type: 2}
+    - rid: 2624497085223534688
+      type: {class: Condition_Numeric, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        op: 5
+        value1:
+          rid: 2624497085223534691
+        value2:
+          rid: 2624497085223534690
+    - rid: 2624497085223534690
+      type: {class: ValueLiteral, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        value: 7
+    - rid: 2624497085223534691
+      type: {class: ValueTokenCount, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        token: {fileID: 11400000, guid: a135f6025046125418cc206579b7646f, type: 2}
 --- !u!1001 &2373563698858447476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12,10 +90,6 @@ PrefabInstance:
       propertyPath: 'activeTokens.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 9c2920d2621ed974a93dc7fdf34f7632, type: 2}
-    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
-      propertyPath: _eventType
-      value: 
-      objectReference: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: 'actions.Array.data[1]'
       value: 2624497045640577090
@@ -33,9 +107,17 @@ PrefabInstance:
       value: Assembly-CSharp WSKit.GameAction_AddToken
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497038681178189].wait
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497045640577090].wait
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497038681178189].sound
+      value: 
+      objectReference: {fileID: 11400000, guid: c0863c95aa3edc040b3b618de90695ef, type: 2}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497045640577089].token
       value: 
@@ -102,6 +184,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6664109775479673827, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 511158570107430249}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6575549124373339123, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2994248240039397175}
   m_SourcePrefab: {fileID: 100100000, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+--- !u!1 &8913077265930062215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6575549124373339123, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+  m_PrefabInstance: {fileID: 2373563698858447476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2994248240039397175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8913077265930062215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8dfa135ec7108f43bf50e0bf5d050b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tokenChangeEvent: {fileID: 11400000, guid: 8de82f45915d59448a6bfb95bcff7f04, type: 2}
+--- !u!4 &8974331638034252183 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6664109775479673827, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+  m_PrefabInstance: {fileID: 2373563698858447476}
+  m_PrefabAsset: {fileID: 0}

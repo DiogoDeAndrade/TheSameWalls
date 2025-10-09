@@ -3,7 +3,7 @@ using UC;
 
 public class ActManager : MonoBehaviour
 {
-    [SerializeField] private WSKit.EventType    startEvent;
+    [SerializeField] private WSKit.EventType    updateEvent;
     [SerializeField] private Hypertag[]     activeTokens;
 
     private float _timeFromStart = 0.0f;
@@ -27,15 +27,25 @@ public class ActManager : MonoBehaviour
 
         UpdateFonts();
 
-        var tokenManager = FindFirstObjectByType<TokenManager>();
+        var tokenManager = GetComponent<TokenManager>();
         foreach (var t in activeTokens)
             tokenManager?.Add(t);
+
+        var inventory = FindFirstObjectByType<Inventory>(); 
+        if (inventory)
+        {
+            var inventoryDisplay = FindFirstObjectByType<InventoryDisplay>();
+            if (inventoryDisplay)
+            {
+                inventoryDisplay.SetInventory(inventory);
+            }
+        }
     }
 
     private void Update()
     {
         _timeFromStart += Time.deltaTime;
-        WSKit.OnEvent.TriggerEvent(startEvent);
+        WSKit.OnEvent.TriggerEvent(updateEvent);
         UpdateFonts();
     }
 

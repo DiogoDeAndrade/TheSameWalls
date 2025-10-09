@@ -8,25 +8,45 @@ namespace WSKit
     [System.Serializable]
     public class GameAction_SetMaterialProperty : GameAction
     {
+        
         public enum Type
         {
             Float, Color, Vector, Texture
         };
 
-        [SerializeField] private Type       type;
-        [SerializeField] private string     propName;
-        [SerializeField] private Color      color;
-        [SerializeField] private Vector4    vector;
-        [SerializeField] private float      fValue;
-        [SerializeField] private Texture    texture;
+        [SerializeField] private TargetMaterial targetMaterial;
+        [SerializeField] private Type           type;
+        [SerializeField] private string         propName;
+        [SerializeField] private Color          color;
+        [SerializeField] private Vector4        vector;
+        [SerializeField] private float          fValue;
+        [SerializeField] private Texture        texture;
 
         public override IEnumerator Execute(GameObject go)
         {
+            Renderer renderer = null;
             Material material = null;
-            Renderer renderer = go.GetComponent<Renderer>();
-            if (renderer != null)
+            switch (targetMaterial.target)
             {
-                material = renderer.material;
+                case TargetMaterial.Target.ThisRenderer:
+                    renderer = go.GetComponent<Renderer>();
+                    if (renderer != null)
+                    {
+                        material = renderer.materials[targetMaterial.subMaterial];
+                    }
+                    break;
+                case TargetMaterial.Target.Material:
+                    material = targetMaterial.material;
+                    break;
+                case TargetMaterial.Target.Renderer:
+                    renderer = targetMaterial.renderer;
+                    if (renderer != null)
+                    {
+                        material = renderer.materials[targetMaterial.subMaterial];
+                    }
+                    break;
+                default:
+                    break;
             }
 
             if (material == null)

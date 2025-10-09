@@ -1,0 +1,4 @@
+﻿1
+00:00:00,000 --> 00:00:02,020
+Alright, just need a pen and some paper now.
+

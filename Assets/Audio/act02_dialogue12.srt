@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:03,200
+[speaker=Mom]Can we not do this now? He’ll hear you.
+
+2
+00:00:03,500 --> 00:00:06,200
+[speaker=Dad]I’m not the one hiding things, am I?
+
+3
+00:00:06,900 --> 00:00:08,800
+[speaker=Mom]Please, not tonight.
+
+4
+00:00:09,460 --> 00:00:11,100
+[speaker=Caleb]Yeah, not going out there.
+

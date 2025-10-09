@@ -66,5 +66,11 @@ namespace WSKit
                 rectTransform.sizeDelta = size;
             }
         }
+
+        public void SetCursor(bool show)
+        {
+            if (show) canvasGroup.FadeIn(fadeTime);
+            else canvasGroup.FadeOut(fadeTime);
+        }
     }
 }

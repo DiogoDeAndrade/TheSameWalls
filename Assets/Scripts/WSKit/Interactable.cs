@@ -58,14 +58,15 @@ namespace WSKit
             return true;
         }
 
-        public bool Interact(GameObject referenceObject)
+        public bool Interact(GameObject referenceObject, InteractionHandler interactionHandler)
         {
-            StartCoroutine(RunActionsCR());
+            MonoBehaviour runner = interactionHandler ? interactionHandler : this;
+            runner.StartCoroutine(RunActionsCR(interactionHandler));
 
             return true;
         }
 
-        IEnumerator RunActionsCR()
+        IEnumerator RunActionsCR(MonoBehaviour runner)
         {
             isRunning = true;
 
@@ -85,7 +86,7 @@ namespace WSKit
                 else if (routine != null)
                 {
                     // Run asynchronously, but don't wait
-                    StartCoroutine(routine);
+                    runner.StartCoroutine(routine);
                 }
             }
 

@@ -69,8 +69,11 @@ namespace WSKit.Editor
             _conditionsList.DoLayoutList();
             _actionsList.DoLayoutList();
 
-            EditorGUILayout.PropertyField(_cooldown, new GUIContent("Cooldown"));
             EditorGUILayout.PropertyField(_canRetrigger, new GUIContent("Can Retrigger"));
+            if (_canRetrigger.boolValue)
+            {
+                EditorGUILayout.PropertyField(_cooldown, new GUIContent("Cooldown"));
+            }
 
             EditorGUI.indentLevel--;
 

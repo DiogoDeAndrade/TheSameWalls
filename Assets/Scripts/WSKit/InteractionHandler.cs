@@ -40,14 +40,21 @@ namespace WSKit
             var hits = Physics.SphereCastAll(transform.position, raycastRadius, transform.forward, interactionRange, interactionLayers, QueryTriggerInteraction.Collide);
             Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
 
-            if (debugMode) Debug.Log($"Spherecast hits = {hits.Length}");
+            if (debugMode)
+            {
+                Debug.Log($"Spherecast hits = {hits.Length}");
+                foreach (var hit in hits)
+                {
+                    Debug.Log($"Hit {hit.collider.name} at {hit.distance}");
+                }
+            }
 
             Interactable[] interactables = null;
             Interactable activeInteraction = null;
 
             foreach (var hit in hits)
             {
-                var localInteractables = hit.collider.GetComponentsInChildren<Interactable>();
+                var localInteractables = hit.collider.GetComponents<Interactable>();
                 if (localInteractables.Length > 0)
                 {
                     if (debugMode) Debug.Log($"Object {hit.collider.name} has {localInteractables.Length} interactables...");
@@ -70,10 +77,10 @@ namespace WSKit
                             interactables = localInteractables;
                             break;
                         }
-                        else
-                        {
-                            if (debugMode) Debug.Log($"Interactable {activeInteraction.name} is NOT interactable");
-                        }
+                    }
+                    if (activeInteraction == null)
+                    {
+                        if (debugMode) Debug.Log($"No interactable found on {hit.collider.name}");
                     }
                 }
             }
@@ -91,7 +98,7 @@ namespace WSKit
                 {
                     if (debugMode) Debug.Log($"Interacting with {activeInteraction.name}...");
 
-                    activeInteraction.Interact(referenceObject);
+                    activeInteraction.Interact(referenceObject, this);
                 }
             }
             else

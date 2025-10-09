@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventType: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
+  _eventType: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
   _referenceObject: {fileID: 0}
   conditions:
   - rid: 2624497038681178187
@@ -52,6 +52,8 @@ MonoBehaviour:
   actions:
   - rid: 2624497038681178189
   - rid: 2624497038681178192
+  retrigger: 0
+  cooldown: 0
   references:
     version: 2
     RefIds:
@@ -124,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbe7d52374d4d949a97c9a002923978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEvent: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
+  updateEvent: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
   activeTokens:
   - {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
 --- !u!114 &7297538717662998470

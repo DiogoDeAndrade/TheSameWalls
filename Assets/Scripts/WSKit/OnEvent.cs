@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using UC;
 using UnityEngine;
@@ -11,16 +12,23 @@ namespace WSKit
         [SerializeField] private GameObject         _referenceObject;
         [SerializeReference] private Condition[]    conditions;
         [SerializeReference] private GameAction[]   actions;
+        [SerializeReference] private bool           retrigger = true;
+        [SerializeReference] private float          cooldown;
 
-        bool isRunning = false;
+        bool    isRunning = false;
+        float   lastTriggerTime = float.NegativeInfinity;
 
-        GameObject referenceObject => _referenceObject ? _referenceObject : gameObject;
+        GameObject      referenceObject => _referenceObject ? _referenceObject : gameObject;
+        MonoBehaviour   runner => _referenceObject ? _referenceObject.GetComponent<MonoBehaviour>() : this;
+
         public EventType  eventType => _eventType;
 
         public void _TriggerEvent(EventType evt)
         {
             if (eventType != evt) return;
             if (isRunning) return;
+            if (Time.time - lastTriggerTime < cooldown) return;
+            if ((!retrigger) && (lastTriggerTime >= 0)) return;
 
             foreach (var t in conditions)
             {
@@ -35,7 +43,7 @@ namespace WSKit
                 t.SetTriggered();
             }
 
-            StartCoroutine(RunActionsCR());
+            runner.StartCoroutine(RunActionsCR());
         }
 
         IEnumerator RunActionsCR()
@@ -58,11 +66,12 @@ namespace WSKit
                 else if (routine != null)
                 {
                     // Run asynchronously, but don't wait
-                    StartCoroutine(routine);
+                    runner.StartCoroutine(routine);
                 }
             }
 
             isRunning = false;
+            lastTriggerTime = Time.time;
         }
 
         public static void TriggerEvent(EventType evt)

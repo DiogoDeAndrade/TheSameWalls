@@ -7,13 +7,8 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Inventory System
+* Stop audio when new subtitled sound starts
 * Act 2
-  * Tidy desk
-  * Turn on lamp
-  * Find screwdriver
-  * Open lava lamp
-  * Get bulb
   * Use bulb on lamp
   * Find notebook and pen
   * Find book
@@ -33,12 +28,18 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 - [Door icons](https://www.flaticon.com/free-icons/door) created by Good Ware - [Flaticon], free for personal and commercial use with attribution.
 - [Grab icons](https://www.flaticon.com/free-icons/grab) created by Freepik - [Flaticon], free for personal and commercial use with attribution.
 - [Research icons](https://www.flaticon.com/free-icons/research) created by ibrandify - [Flaticon], free for personal and commercial use with attribution.
+- [fleece-jacket](https://www.fab.com/listings/a0aeacfe-4225-44e7-8b6c-850c033a217a) by [https://www.fab.com/sellers/Mayanila](https://www.fab.com/sellers/Mayanila), licensed through [CC-BY 4.0]
+- [Lava lamp](https://www.fab.com/listings/6a226550-e941-44ed-a8c6-53511766b229) by [BAJ](https://www.fab.com/sellers/BAJ), licensed through [CC-BY 4.0]
+- [CC0 - Screwdriver](https://www.fab.com/listings/ff1bb08c-9c2e-4278-9027-dbcde74b879f) by [plaggy](https://www.fab.com/sellers/plaggy), licensed through [CC-BY 4.0]
+- [Professional Photo Backpack](https://www.fab.com/listings/e6013c65-50a4-4358-b6af-333538891214) by [CIHIRIS](https://www.fab.com/sellers/CIHIRIS), licensed through [CC-BY 4.0]
+- [Incandescent light bulb](https://www.fab.com/listings/1d7f978c-2d98-4780-8fce-20fa0f96d521) by [jp.agner](https://www.fab.com/sellers/jp.agner), licensed through [CC-BY 4.0]
 - Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
 - Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
 
+- [Exploding lightbulb 1](https://freesound.org/people/jorickhoofd/sounds/179265/) by [jorickhoofd](http://jorickbronius.wordpress.com/), licensed through [CC-BY 4.0]
 - Voices by [ElevenLab](https://elevenlabs.io/)
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
