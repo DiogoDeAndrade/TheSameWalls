@@ -7,15 +7,17 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 
 ## Todo
 
-* Stop audio when new subtitled sound starts
 * Act 2
-  * Use bulb on lamp
   * Find notebook and pen
   * Find book
   * Find keepsake
   * Write homework
   * Leave room
-* Design game
+* Act 3
+  * Open window
+  * Leeave room
+* Act 4
+* Act 5
 * VR
 
 ## Art
@@ -28,6 +30,9 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 - [Door icons](https://www.flaticon.com/free-icons/door) created by Good Ware - [Flaticon], free for personal and commercial use with attribution.
 - [Grab icons](https://www.flaticon.com/free-icons/grab) created by Freepik - [Flaticon], free for personal and commercial use with attribution.
 - [Research icons](https://www.flaticon.com/free-icons/research) created by ibrandify - [Flaticon], free for personal and commercial use with attribution.
+- [Drawer icons](https://www.flaticon.com/free-icons/drawer) created by Vector Stall - [Flaticon], free for personal and commercial use with attribution.
+- [Screwdriver icons](https://www.flaticon.com/free-icons/screwdriver) created by Freepik - [Flaticon], free for personal and commercial use with attribution.
+- [Bulb icons](https://www.flaticon.com/free-icons/bulb) created by AB Design - [Flaticon], free for personal and commercial use with attribution.
 - [fleece-jacket](https://www.fab.com/listings/a0aeacfe-4225-44e7-8b6c-850c033a217a) by [https://www.fab.com/sellers/Mayanila](https://www.fab.com/sellers/Mayanila), licensed through [CC-BY 4.0]
 - [Lava lamp](https://www.fab.com/listings/6a226550-e941-44ed-a8c6-53511766b229) by [BAJ](https://www.fab.com/sellers/BAJ), licensed through [CC-BY 4.0]
 - [CC0 - Screwdriver](https://www.fab.com/listings/ff1bb08c-9c2e-4278-9027-dbcde74b879f) by [plaggy](https://www.fab.com/sellers/plaggy), licensed through [CC-BY 4.0]

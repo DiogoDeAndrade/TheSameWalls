@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8c5a5bec15423a4b8b6652c02b2666d, type: 3}
-  m_Name: act02_dialogue11
+  m_Name: act02_dialogue16
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 262b1a8316d3e024db4c14eaeea64fce, type: 3}
+  clip: {fileID: 8300000, guid: 5e757e86d328dc84ab87f3ab9566a216, type: 3}
   soundType: 4
   loop: 0
   soundFlags: -1
-  subtitleTrack: {fileID: 3778455083779103953, guid: fd9ee37782065c34cb2a45a2a59db4c4, type: 3}
+  subtitleTrack: {fileID: 3778455083779103953, guid: 33918e699ac16384395b47b524e83bd9, type: 3}
   speaker: {fileID: 11400000, guid: 7ea5ff23a64bd5848b08ddb206b2e0c5, type: 2}
   additionalSpeakers: []
   volumeRange: {x: 1, y: 1}

@@ -284,37 +284,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5521807828763439947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3986199796001631849
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8769465627425295669}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8769465627425295669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3986199796001631849}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.5180774, z: -0, w: 0.85533386}
-  m_LocalPosition: {x: -1.296, y: 0.659, z: -1.2928622}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5521807828763439947}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1244060630794908193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,9 +389,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6765159236943888746, guid: 3cb1f5a66b2b2f4429554cbd325935d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8852936748240551433}
-    - targetCorrespondingSourceObject: {fileID: 6765159236943888746, guid: 3cb1f5a66b2b2f4429554cbd325935d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8769465627425295669}
     - targetCorrespondingSourceObject: {fileID: 6765159236943888746, guid: 3cb1f5a66b2b2f4429554cbd325935d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2653431454124168979}
@@ -620,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5bf9a15902c16e449e14a28963a6181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionVerb: {fileID: 11400000, guid: 92d2b20c201ce954f86dfdab16414e2f, type: 2}
+  interactionVerb: {fileID: 11400000, guid: 2fef79e5d4cacfe4fb85ae7a188a867a, type: 2}
   _priority: 0
   overrideCursor: 0
   cursorDef:
@@ -631,12 +597,12 @@ MonoBehaviour:
   - rid: 2624497085223535011
   - rid: 2624497085223535020
   actions:
+  - rid: 2624497085223535025
   - rid: 2624497085223535037
   - rid: 2624497085223535021
   - rid: 2624497085223535022
   - rid: 2624497085223535023
-  - rid: 2624497085223535025
-  - rid: 2624497085223535043
+  - rid: 7403207736974639166
   cooldown: 2
   canRetrigger: 0
   references:
@@ -696,11 +662,11 @@ MonoBehaviour:
         initialized: 1
         wait: 1
         sound: {fileID: 11400000, guid: 606b878f1bbc1d449b016c2163c00d60, type: 2}
-    - rid: 2624497085223535043
+    - rid: 7403207736974639166
       type: {class: GameAction_MoveObject, ns: WSKit, asm: Assembly-CSharp}
       data:
         initialized: 1
         wait: 0
-        objectToMove: {fileID: 4946594891586218477}
-        targetTransform: {fileID: 2653431454124168979}
-        duration: 0
+        objectToMove: {fileID: 0}
+        targetTransform: {fileID: 0}
+        duration: 0.5

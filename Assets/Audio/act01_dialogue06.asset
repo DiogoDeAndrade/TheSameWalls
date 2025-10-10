@@ -15,7 +15,9 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: d503c1b53a27bbb4f84c3ca412a69e8a, type: 3}
   soundType: 4
   loop: 0
+  soundFlags: -1
   subtitleTrack: {fileID: 3778455083779103953, guid: e1a566eb6d2847844b30b67ded3b33b9, type: 3}
   speaker: {fileID: 11400000, guid: 7ea5ff23a64bd5848b08ddb206b2e0c5, type: 2}
+  additionalSpeakers: []
   volumeRange: {x: 1, y: 1}
   pitchRange: {x: 1, y: 1}

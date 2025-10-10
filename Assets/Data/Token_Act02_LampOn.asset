@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e6711868d9d9842af352cc128afa00, type: 3}
-  m_Name: VerbOpen
+  m_Script: {fileID: 11500000, guid: 515c41c1aa3a2d1428ef0011c51517b4, type: 3}
+  m_Name: Token_Act02_LampOn
   m_EditorClassIdentifier: 
-  displayName: Open
-  cursorDef:
-    cursor: {fileID: 21300000, guid: 93ee114877a3c96449b165b3a0b1c210, type: 3}
-    color: {r: 1, g: 1, b: 1, a: 1}
-    size: {x: 0, y: 0}

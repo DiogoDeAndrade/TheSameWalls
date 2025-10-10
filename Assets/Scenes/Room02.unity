@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5bf9a15902c16e449e14a28963a6181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionVerb: {fileID: 11400000, guid: edf01eca7396737499337dc9d83c9181, type: 2}
+  interactionVerb: {fileID: 11400000, guid: 885635bc7dff5fa4c829b6339e1a42a1, type: 2}
   _priority: 0
   overrideCursor: 0
   cursorDef:
@@ -5519,6 +5519,93 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0012170946, y: 0.0015587809, z: 0.0015591641}
   m_Center: {x: -0.000111821326, y: -0.00011609178, z: 0.004481567}
+--- !u!114 &704771936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704771930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5bf9a15902c16e449e14a28963a6181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionVerb: {fileID: 11400000, guid: edf01eca7396737499337dc9d83c9181, type: 2}
+  _priority: 0
+  overrideCursor: 0
+  cursorDef:
+    cursor: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: {x: 0, y: 0}
+  conditions:
+  - rid: 2624497085223534713
+  - rid: 7403207736974639104
+  actions:
+  - rid: 2624497085223534726
+  - rid: 7403207736974639164
+  - rid: 2624497085223534728
+  - rid: 2624497085223534771
+  - rid: 2624497085223534714
+  cooldown: 2
+  canRetrigger: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2624497085223534713
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        token: {fileID: 11400000, guid: d2eba13fcfd86cd4598bd05b0b3c1be3, type: 2}
+    - rid: 2624497085223534714
+      type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 1
+        sound: {fileID: 11400000, guid: 29148f28b145c444e81993870ad7dcb4, type: 2}
+    - rid: 2624497085223534726
+      type: {class: GameAction_AddToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        token: {fileID: 11400000, guid: 3fbf29ee79f23c2419208e1d09a1fea0, type: 2}
+        quantity: 1
+    - rid: 2624497085223534728
+      type: {class: GameAction_SetMaterialProperty, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        targetMaterial:
+          target: 0
+          material: {fileID: 0}
+          renderer: {fileID: 0}
+          subMaterial: 1
+        type: 1
+        propName: _EmissionColor
+        color: {r: 2.9960785, g: 2.8123567, b: 1.7100259, a: 1}
+        vector: {x: 0, y: 0, z: 0, w: 0}
+        fValue: 0
+        texture: {fileID: 0}
+    - rid: 2624497085223534771
+      type: {class: GameAction_ToggleObject, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        targetGameObject: {fileID: 1329636307}
+        state: 0
+    - rid: 7403207736974639104
+      type: {class: Condition_IsEquipped, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        slot: {fileID: 11400000, guid: e10c6094de08e694a8499c18068eaf76, type: 2}
+        item: {fileID: 11400000, guid: 206454ec01338fb42ae1bd2a7ccab04b, type: 2}
+    - rid: 7403207736974639164
+      type: {class: GameAction_RemoveItem, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        item: {fileID: 11400000, guid: 206454ec01338fb42ae1bd2a7ccab04b, type: 2}
+        quantity: 1
 --- !u!1 &802714308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2068896071140326350, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
@@ -6501,6 +6588,7 @@ MonoBehaviour:
   actions:
   - rid: 2624497085223534840
   - rid: 2624497085223534841
+  - rid: 7403207736974639165
   cooldown: 2
   canRetrigger: 0
   references:
@@ -6520,6 +6608,12 @@ MonoBehaviour:
         wait: 0
         item: {fileID: 11400000, guid: 1c7fc5a0e3346274eb6037702ebfd890, type: 2}
         quantity: 1
+    - rid: 7403207736974639165
+      type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 1
+        sound: {fileID: 11400000, guid: aca2997f9cca047419b05a8b2df45702, type: 2}
 --- !u!65 &2069650350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8416,6 +8510,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2702332496305840252, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 704771934}
+    - targetCorrespondingSourceObject: {fileID: 2702332496305840252, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 704771936}
     - targetCorrespondingSourceObject: {fileID: 7705544143677871712, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 818971367}
@@ -8666,26 +8763,6 @@ PrefabInstance:
     - target: {fileID: 5521807828763439947, guid: c365291fde50800428358c4293e68121, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127711644599202259, guid: c365291fde50800428358c4293e68121, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 2624497085223535025
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127711644599202259, guid: c365291fde50800428358c4293e68121, type: 3}
-      propertyPath: 'actions.Array.data[1]'
-      value: 2624497085223535037
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127711644599202259, guid: c365291fde50800428358c4293e68121, type: 3}
-      propertyPath: 'actions.Array.data[2]'
-      value: 2624497085223535021
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127711644599202259, guid: c365291fde50800428358c4293e68121, type: 3}
-      propertyPath: 'actions.Array.data[3]'
-      value: 2624497085223535022
-      objectReference: {fileID: 0}
-    - target: {fileID: 7127711644599202259, guid: c365291fde50800428358c4293e68121, type: 3}
-      propertyPath: 'actions.Array.data[4]'
-      value: 2624497085223535023
       objectReference: {fileID: 0}
     - target: {fileID: 7633502257626759829, guid: c365291fde50800428358c4293e68121, type: 3}
       propertyPath: m_Name

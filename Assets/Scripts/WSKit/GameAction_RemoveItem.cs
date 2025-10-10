@@ -7,7 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
-    public class GameAction_AddItem : GameAction
+    public class GameAction_RemoveItem : GameAction
     {
         [SerializeField] private Item   item;
         [SerializeField] private int    quantity = 1;
@@ -16,14 +16,14 @@ namespace WSKit
         {
             if (item == null)
             {
-                Debug.LogWarning("No item specified to add.");
+                Debug.LogWarning("No item specified to remove.");
             }
             var inventory = GameObject.FindFirstObjectByType<Inventory>();
             if (inventory == null)
             {
                 Debug.LogWarning($"Can't find inventory.");
             }
-            inventory?.Add(item, quantity);
+            inventory?.Remove(item, quantity);
 
             yield return null;
         }
