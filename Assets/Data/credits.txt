@@ -1,0 +1,39 @@
+Design
+Diogo de Andrade
+
+Art
+90's Bedroom by Robinson, Fab Standard License license, purchased
+Pile Of Clothes by Neoniclide, CC-BY 4.0
+Laundry Basket 1  - 3D Scan by Alben Tan, CC-BY 4.0
+pile of clothes by vicente betoret ferrero, CC-BY 4.0
+Kilppad Dawn 1 by Greg Zaal, CC0
+Door icons by Good Ware - Flaticon, free for personal and commercial use with attribution.
+Grab icons by Freepik - Flaticon, free for personal and commercial use with attribution.
+Research icons by ibrandify - Flaticon, free for personal and commercial use with attribution.
+Drawer icons by Vector Stall - Flaticon, free for personal and commercial use with attribution.
+Screwdriver icons by Freepik - Flaticon, free for personal and commercial use with attribution.
+Bulb icons by AB Design - Flaticon, free for personal and commercial use with attribution.
+fleece-jacket by Mayanila, CC-BY 4.0
+Lava lamp by BAJ, CC-BY 4.0
+CC0 - Screwdriver by plaggy, CC-BY 4.0
+Professional Photo Backpack by CIHIRIS, CC-BY 4.0
+Incandescent light bulb by jp.agner, CC-BY 4.0
+Single spiral notepad by Roy Sousa, Fab Standard License
+Ballpoint Pen by Emilio Gallo, CC-BY 4.0
+Font Noto Sans by Google, SIL-OFL
+Font OpenDyslexic by Abbie Gonzalez, SIL-OFL
+Everything else done by Diogo de Andrade, CC0
+
+Sound
+Exploding lightbulb 1 by jorickhoofd, CC-BY 4.0
+Drawer Open and Close by RoivasUGO, CC0
+Voices by ElevenLab
+Music by Suno
+Everything else done by Diogo de Andrade, CC0
+
+Code
+Some code was adapted/refactored from Okapi Kit and UnityCommon library, MIT license
+All remaining game source code by Diogo de Andrade, MIT license
+
+Full game source available at https://github.com/DiogoDeAndrade/OneRoom
+with complete credits (links, licences, etc)

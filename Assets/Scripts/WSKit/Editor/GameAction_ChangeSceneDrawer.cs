@@ -1,3 +1,4 @@
+// Assets/Editor/GameAction_ChangeSceneDrawer.cs
 using UnityEditor;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ namespace WSKit.Editor
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            // header + one row (fade time & color)
+            // 2 lines: header + fade line
             return Line + VSpace + Line;
         }
 
@@ -22,42 +23,56 @@ namespace WSKit.Editor
             var sceneProp = property.FindPropertyRelative("scene");
             var fadeTimeProp = property.FindPropertyRelative("fadeTime");
             var fadeColorProp = property.FindPropertyRelative("fadeColor");
-            var waitProp = property.FindPropertyRelative("wait"); // may be null in some actions
+            var waitProp = property.FindPropertyRelative("wait");
 
             var header = new Rect(position.x, position.y, position.width, Line);
             var row = new Rect(position.x, position.y + Line + VSpace, position.width, Line);
 
-            // Header rects: [Scene selector] [ "Change Scene" label ] .................. [Wait]
+            // Split first line into: [Label "Change Scene"] [Scene selector] [Wait]
             Rect waitRect = new Rect(header.xMax - WaitW, header.y, WaitW, Line);
-            float rightEdgeForTitle = waitRect.x - Pad;
+            float rightEdge = waitRect.x - Pad;
 
-            // Give the scene selector a generous slice, then title takes the rest
-            float sceneW = Mathf.Max(120f, header.width * 0.55f - WaitW);
-            Rect sceneRect = new Rect(header.x, header.y, Mathf.Min(sceneW, rightEdgeForTitle - header.x), Line);
-            Rect titleRect = new Rect(sceneRect.xMax + Pad, header.y, Mathf.Max(0f, rightEdgeForTitle - (sceneRect.xMax + Pad)), Line);
+            // Label area (fixed width)
+            float labelW = EditorGUIUtility.labelWidth;
+            Rect labelRect = new Rect(header.x, header.y, labelW, Line);
+
+            // Scene selector takes the rest
+            Rect sceneRect = new Rect(labelRect.xMax, header.y, rightEdge - labelRect.xMax, Line);
 
             EditorGUI.BeginProperty(position, label, property);
 
-            // Scene selector (no label)
-            if (sceneProp != null)
-                EditorGUI.PropertyField(sceneRect, sceneProp, GUIContent.none);
+            // Label
+            EditorGUI.LabelField(labelRect, "Change Scene");
 
-            // Title
-            EditorGUI.LabelField(titleRect, "Change Scene");
+            // Force the Scene selector to use the full rect (NaughtyAttributes-safe)
+            float oldLW = EditorGUIUtility.labelWidth;
+            int oldIndent = EditorGUI.indentLevel;
+            EditorGUI.indentLevel = 0;
+            EditorGUIUtility.labelWidth = 1f; // effectively no label space
 
-            // Right-aligned wait checkbox (if present)
+            EditorGUI.PropertyField(sceneRect, sceneProp, GUIContent.none);
+
+            EditorGUIUtility.labelWidth = oldLW;
+            EditorGUI.indentLevel = oldIndent;
+
+            // Wait checkbox
             if (waitProp != null)
                 EditorGUI.PropertyField(waitRect, waitProp, GUIContent.none);
 
-            // Second row: Fade Time | Fade Color
+            // Second line — Fade Time / Fade Color
             float half = (row.width - Pad) * 0.5f;
             var rTime = new Rect(row.x, row.y, half, Line);
             var rColor = new Rect(row.x + half + Pad, row.y, row.width - half - Pad, Line);
 
-            float oldLW = EditorGUIUtility.labelWidth;
+            oldLW = EditorGUIUtility.labelWidth;
             EditorGUIUtility.labelWidth = 70f;
-            if (fadeTimeProp != null) EditorGUI.PropertyField(rTime, fadeTimeProp, new GUIContent("Fade Time"));
-            if (fadeColorProp != null) EditorGUI.PropertyField(rColor, fadeColorProp, new GUIContent("Fade Color"));
+
+            if (fadeTimeProp != null)
+                EditorGUI.PropertyField(rTime, fadeTimeProp, new GUIContent("Fade Time"));
+
+            if (fadeColorProp != null)
+                EditorGUI.PropertyField(rColor, fadeColorProp, new GUIContent("Fade Color"));
+
             EditorGUIUtility.labelWidth = oldLW;
 
             EditorGUI.EndProperty();

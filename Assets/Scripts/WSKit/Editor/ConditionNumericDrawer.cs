@@ -6,7 +6,7 @@ using WSKit;
 namespace WSKit.Editor
 {
     [CustomPropertyDrawer(typeof(Condition_Numeric))]
-    public class Condition_NumericDrawer : PropertyDrawer
+    public class ConditionNumericDrawer : PropertyDrawer
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {

@@ -1,23 +1,40 @@
-# ONE ROOM
+# The Same Walls
 
 Developed for the September/October [Game Creators Club](https://game-creators-club.itch.io/) at Lusofona University, with theme "One Room".
 
+The game as it stands is still incomplete, I started raising the bar while I was developing it and I couldn't build the complete game the way I wanted in the three days I could muster to work on this. One day I'll revisit this, for sure; the story is completely incomplete, and I have some interesting ideas I'd like to explore.
+
 ## Game
 
+"The Same Walls" is an atmospheric narrative puzzle game set entirely in one room.
+You play as Caleb, a teenager that avoids leaving his bedroom.
+At the start of each act, you overhear fragments of conversation through the door - moments that slowly reveal what's happening in Caleb's life.
+To move the story forward, you must interact with objects, complete small tasks, and finally leave the room to face what waits outside.
+
+The story tackles themes of illness, death and domestic conflict. If you might be triggered by domestic violence, cancer and death, maybe give this one a skip.
 
 ## Todo
 
-* Act 2
-  * Find notebook and pen
-  * Find book
-  * Find keepsake
-  * Write homework
-  * Leave room
-* Act 3
+* Act 3 
+  * Disease gets worse
+  * Design and build
+* Act 4
+  * The funeral
   * Open window
   * Leeave room
-* Act 4
 * Act 5
+  * Caleb starts acting out, dad reacts
+  * Probably not do it for now
+* Act 5
+  * Dad spirals out of control
+  * Probably not do it for now
+* Act 6
+  * The end
+  * Get/equip knife or keepsake
+  * Open door
+  * Ending 1: Caleb death
+  * Ending 2: Dad death
+  * Ending 3: 'Good ending'
 * VR
 
 ## Art
@@ -38,14 +55,18 @@ Developed for the September/October [Game Creators Club](https://game-creators-c
 - [CC0 - Screwdriver](https://www.fab.com/listings/ff1bb08c-9c2e-4278-9027-dbcde74b879f) by [plaggy](https://www.fab.com/sellers/plaggy), licensed through [CC-BY 4.0]
 - [Professional Photo Backpack](https://www.fab.com/listings/e6013c65-50a4-4358-b6af-333538891214) by [CIHIRIS](https://www.fab.com/sellers/CIHIRIS), licensed through [CC-BY 4.0]
 - [Incandescent light bulb](https://www.fab.com/listings/1d7f978c-2d98-4780-8fce-20fa0f96d521) by [jp.agner](https://www.fab.com/sellers/jp.agner), licensed through [CC-BY 4.0]
+- [Single spiral notepad](https://www.fab.com/listings/03927042-a6ce-49d7-bfd6-ef96e629660b) by [Roy Sousa](https://www.fab.com/sellers/Roy%20Sousa), licensed through [Fab Standard License]
+- [Ballpoint Pen](https://www.fab.com/listings/48bf6ead-bcc3-41b7-b92e-5c7c6da560d8) by [Emilio Gallo](https://www.fab.com/sellers/Emilio%20Gallo), licensed through [CC-BY 4.0]
 - Font [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) by Google, licensed through the [SIL-OFL] license.
-- Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by Google, licensed through the [SIL-OFL] license.
+- Font [OpenDyslexic](https://antijingoist.itch.io/opendyslexic) by [Abbie Gonzalez](https://abbiegonzalez.com/), licensed through the [SIL-OFL] license.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
 
 - [Exploding lightbulb 1](https://freesound.org/people/jorickhoofd/sounds/179265/) by [jorickhoofd](http://jorickbronius.wordpress.com/), licensed through [CC-BY 4.0]
+- [Drawer Open and Close](https://freesound.org/people/RoivasUGO/sounds/231455/) by [RoivasUGO](https://freesound.org/people/RoivasUGO/), licensed through [CC0]
 - Voices by [ElevenLab](https://elevenlabs.io/)
+- Music by [Suno](https://suno.com/)
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Code

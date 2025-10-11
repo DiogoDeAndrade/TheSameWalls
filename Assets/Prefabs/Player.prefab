@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionEnabled: 1
   masterInteractionObject: {fileID: 5587027834930626948}
-  interactionRange: 1.3
+  interactionRange: 1.8
   raycastRadius: 0.025
   interactionLayers:
     serializedVersion: 2

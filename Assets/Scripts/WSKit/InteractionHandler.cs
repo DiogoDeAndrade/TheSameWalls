@@ -49,7 +49,6 @@ namespace WSKit
                 }
             }
 
-            Interactable[] interactables = null;
             Interactable activeInteraction = null;
 
             foreach (var hit in hits)
@@ -69,24 +68,19 @@ namespace WSKit
                             activeInteraction = i;
                             break;
                         }
-
-                        if (activeInteraction)
-                        {
-                            if (debugMode) Debug.Log($"Interactable {activeInteraction.name}  is interactable");
-
-                            interactables = localInteractables;
-                            break;
-                        }
                     }
                     if (activeInteraction == null)
                     {
                         if (debugMode) Debug.Log($"No interactable found on {hit.collider.name}");
                     }
                 }
+                if (activeInteraction) break;
             }
 
             if (activeInteraction)
             {
+                if (debugMode) Debug.Log($"Interactable {activeInteraction.name}  is interactable");
+
                 // Handle cursor
                 if (cursorManager)
                 {
