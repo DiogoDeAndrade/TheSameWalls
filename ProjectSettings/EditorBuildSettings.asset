@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Disclaimer.unity
+    guid: 6559bc442c7b3ff4abf5fc5a8156a4f7
+  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: f53bec05ba5a7024597e2c806ccccb68
   - enabled: 1
@@ -13,7 +16,7 @@ EditorBuildSettings:
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Room02.unity
-    guid: 864ac329a304fd8489530382a2bccdcb
+    guid: bfb7e0b2c76f7b8489774d0135399185
   - enabled: 1
     path: Assets/Scenes/Room03.unity
     guid: deb59351ac68c7042bd37a5cda1043ad

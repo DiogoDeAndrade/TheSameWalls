@@ -1,4 +1,4 @@
-# The Same Walls
+![Title](Screenshots/screen01.png)
 
 Developed for the September/October [Game Creators Club](https://game-creators-club.itch.io/) at Lusofona University, with theme "One Room".
 
@@ -6,12 +6,16 @@ The game as it stands is still incomplete, I started raising the bar while I was
 
 ## Game
 
+![Title](Screenshots/screen02.png)
+
 "The Same Walls" is an atmospheric narrative puzzle game set entirely in one room.
 You play as Caleb, a teenager that avoids leaving his bedroom.
 At the start of each act, you overhear fragments of conversation through the door - moments that slowly reveal what's happening in Caleb's life.
 To move the story forward, you must interact with objects, complete small tasks, and finally leave the room to face what waits outside.
 
 The story tackles themes of illness, death and domestic conflict. If you might be triggered by domestic violence, cancer and death, maybe give this one a skip.
+
+![Title](Screenshots/screen03.png)
 
 ## Todo
 
@@ -71,9 +75,8 @@ The story tackles themes of illness, death and domestic conflict. If you might b
 
 ## Code
 
-- Some code was adapted/refactored from [Okapi Kit], [MIT] license.
 - Uses [Unity Common], [MIT] license.
-- [NaughtyAttributes] by Denis Rizov available through the [MIT] license: https://github.com/dbrizov/NaughtyAttributes.git#upm
+- [NaughtyAttributes] by Denis Rizov available through the [MIT] license
 - All remaining game source code by Diogo de Andrade is licensed under the [MIT] license.
 
 ## Metadata
@@ -94,4 +97,5 @@ The story tackles themes of illness, death and domestic conflict. If you might b
 [Fab Standard License]:https://www.fab.com/eula
 [Flaticon]:https://www.flaticon.com/
 [SIL-OFL]:https://openfontlicense.org/open-font-license-official-text/
+[NaughtyAttributes]:https://github.com/dbrizov/NaughtyAttributes.git
 [MIT]:LICENSE

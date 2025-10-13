@@ -91,8 +91,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9c2920d2621ed974a93dc7fdf34f7632, type: 2}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: actions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: 'actions.Array.data[1]'
-      value: 2624497045640577090
+      value: 2624497175541318171
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'actions.Array.data[2]'
+      value: 2624497175541318172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'actions.Array.data[3]'
+      value: 2624497175541318173
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: 'conditions.Array.data[1]'
@@ -107,11 +119,43 @@ PrefabInstance:
       value: Assembly-CSharp WSKit.GameAction_AddToken
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'managedReferences[2624497175541317855]'
+      value: Assembly-CSharp WSKit.GameAction_ToggleInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'managedReferences[2624497175541318171]'
+      value: Assembly-CSharp WSKit.GameAction_PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'managedReferences[2624497175541318172]'
+      value: Assembly-CSharp WSKit.GameAction_AddToken
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: 'managedReferences[2624497175541318173]'
+      value: Assembly-CSharp WSKit.GameAction_ToggleInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497038681178189].wait
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497045640577090].wait
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541317855].wait
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318171].wait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318172].wait
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318173].wait
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
@@ -127,6 +171,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5a6546ec8d1c0b749be58ba39ae52794, type: 2}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541317855].state
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318171].sound
+      value: 
+      objectReference: {fileID: 11400000, guid: c0863c95aa3edc040b3b618de90695ef, type: 2}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318172].token
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a6546ec8d1c0b749be58ba39ae52794, type: 2}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318173].state
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497045640577089].negate
       value: 0
       objectReference: {fileID: 0}
@@ -135,7 +195,27 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318172].quantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
       propertyPath: managedReferences[2624497045640577090].initialized
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541317855].initialized
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318171].initialized
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318172].initialized
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692685804552028603, guid: 046897ca1cb289342ad19667afd322bb, type: 3}
+      propertyPath: managedReferences[2624497175541318173].initialized
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6575549124373339123, guid: 046897ca1cb289342ad19667afd322bb, type: 3}

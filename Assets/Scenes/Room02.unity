@@ -237,7 +237,8 @@ MonoBehaviour:
     cursor: {fileID: 0}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: {x: 0, y: 0}
-  conditions: []
+  conditions:
+  - rid: 2624497175541317848
   actions:
   - rid: 2624497129444868159
   - rid: 2624497085223534806
@@ -262,6 +263,11 @@ MonoBehaviour:
         initialized: 1
         wait: 0
         sound: {fileID: 11400000, guid: 21c9a0b9d694efd448aa18dd086d913c, type: 2}
+    - rid: 2624497175541317848
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        token: {fileID: 11400000, guid: 5a6546ec8d1c0b749be58ba39ae52794, type: 2}
 --- !u!65 &371293030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5406,6 +5412,7 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     size: {x: 0, y: 0}
   conditions:
+  - rid: 2624497175541317847
   - rid: 2624497085223534713
   actions:
   - rid: 2624497085223534726
@@ -5504,6 +5511,11 @@ MonoBehaviour:
         wait: 0
         targetGameObject: {fileID: 1329636307}
         state: 1
+    - rid: 2624497175541317847
+      type: {class: Condition_HasToken, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        negate: 0
+        token: {fileID: 11400000, guid: 5a6546ec8d1c0b749be58ba39ae52794, type: 2}
 --- !u!65 &704771935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8463,7 +8475,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
+      propertyPath: actions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
       propertyPath: 'actions.Array.data[0]'
+      value: 2624497175541317827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
+      propertyPath: 'actions.Array.data[1]'
+      value: 2624497175541317828
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
+      propertyPath: 'actions.Array.data[2]'
       value: 2624497129444868287
       objectReference: {fileID: 0}
     - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
@@ -9110,6 +9134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7056950931357684687, guid: d04ef0d4b98efac46a7c7a94f38f16b8, type: 3}
+      propertyPath: managedReferences[2624497038681178189].wait
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8913077265930062215, guid: d04ef0d4b98efac46a7c7a94f38f16b8, type: 3}
       propertyPath: m_Name
       value: ActManager (Act 2)

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614157026041618489}
   - component: {fileID: 4692685804552028603}
+  - component: {fileID: 8688493169201773742}
   m_Layer: 0
   m_Name: Story
   m_TagString: Untagged
@@ -50,8 +51,10 @@ MonoBehaviour:
   - rid: 2624497038681178187
   - rid: 2624497038681178188
   actions:
-  - rid: 2624497038681178189
-  - rid: 2624497038681178192
+  - rid: 2624497175541317851
+  - rid: 2624497175541317852
+  - rid: 2624497175541317853
+  - rid: 2624497175541317854
   retrigger: 0
   cooldown: 0
   references:
@@ -67,19 +70,74 @@ MonoBehaviour:
       data:
         negate: 0
         token: {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}
-    - rid: 2624497038681178189
+    - rid: 2624497175541317851
+      type: {class: GameAction_ToggleInput, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        state: 1
+    - rid: 2624497175541317852
       type: {class: GameAction_PlaySound, ns: WSKit, asm: Assembly-CSharp}
       data:
         initialized: 1
         wait: 1
         sound: {fileID: 11400000, guid: 6db1dcde42a0b6a498823c2b3bed25f8, type: 2}
-    - rid: 2624497038681178192
+    - rid: 2624497175541317853
       type: {class: GameAction_AddToken, ns: WSKit, asm: Assembly-CSharp}
       data:
         initialized: 1
         wait: 0
         token: {fileID: 11400000, guid: 1cfdd677536540d479784a9f242a2547, type: 2}
         quantity: 1
+    - rid: 2624497175541317854
+      type: {class: GameAction_ToggleInput, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        state: 0
+--- !u!114 &8688493169201773742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079661691472122657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b480975c41bd849ad2610b69daffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventType: {fileID: 11400000, guid: 53def6a1383dfed4eac4a863cb272d09, type: 2}
+  _referenceObject: {fileID: 0}
+  conditions: []
+  actions:
+  - rid: 2624497175541317830
+  - rid: 2624497175541317831
+  retrigger: 1
+  cooldown: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2624497175541317830
+      type: {class: GameAction_ChangeSound, ns: , asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        soundTag: {fileID: 11400000, guid: e95f1f446ad79ae45b80d2ba26efade9, type: 2}
+        property: 0
+        targetValue: 1
+        duration: 2
+        stopOnEnd: 0
+    - rid: 2624497175541317831
+      type: {class: GameAction_ChangeSound, ns: , asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        soundTag: {fileID: 11400000, guid: e95f1f446ad79ae45b80d2ba26efade9, type: 2}
+        property: 1
+        targetValue: 1
+        duration: 2
+        stopOnEnd: 0
 --- !u!1 &6575549124373339123
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbe7d52374d4d949a97c9a002923978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEvent: {fileID: 11400000, guid: 53def6a1383dfed4eac4a863cb272d09, type: 2}
   updateEvent: {fileID: 11400000, guid: ed497a990c62ce54da4fa07c47fefac0, type: 2}
   activeTokens:
   - {fileID: 11400000, guid: 5f248ee1a4f4a354c96a574c00a926d0, type: 2}

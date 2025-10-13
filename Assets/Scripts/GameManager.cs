@@ -1,3 +1,5 @@
+using System.Xml.Linq;
+using UC;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -21,5 +23,19 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        GameOptions.dyslexicMode = PlayerPrefsHelpers.GetBool("DyslexicMode", false);
+        GameOptions.textScale = PlayerPrefs.GetFloat("SubtitleSize", 1.0f);
+    }
+
+    private void Start()
+    {
+        UpdateFonts();
+    }
+
+    static public void UpdateFonts()
+    {
+        var options = GameManager.GameOptions;
+        SubtitleDisplayManager.Instance?.SetFont(options.GetTextFont(), options.GetTextMaterial(), options.textScale);
     }
 }

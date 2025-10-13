@@ -3,9 +3,11 @@ using UC;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OnClickBackToTitle : MonoBehaviour
+public class OnClickToScene
+    : MonoBehaviour
 {
     [SerializeField, Scene] private string sceneName;
+
 
     // Update is called once per frame
     void Update()

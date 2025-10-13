@@ -3,6 +3,7 @@ using UC;
 
 public class ActManager : MonoBehaviour
 {
+    [SerializeField] private WSKit.EventType    startEvent;
     [SerializeField] private WSKit.EventType    updateEvent;
     [SerializeField] private Hypertag[]     activeTokens;
 
@@ -25,7 +26,7 @@ public class ActManager : MonoBehaviour
     {
         _timeFromStart = 0.0f;
 
-        UpdateFonts();
+        GameManager.UpdateFonts();
 
         var tokenManager = GetComponent<TokenManager>();
         foreach (var t in activeTokens)
@@ -40,19 +41,15 @@ public class ActManager : MonoBehaviour
                 inventoryDisplay.SetInventory(inventory);
             }
         }
+
+        WSKit.OnEvent.TriggerEvent(startEvent);
     }
 
     private void Update()
     {
         _timeFromStart += Time.deltaTime;
         WSKit.OnEvent.TriggerEvent(updateEvent);
-        UpdateFonts();
-    }
-
-    void UpdateFonts()
-    {
-        var options = GameManager.GameOptions;
-        SubtitleDisplayManager.Instance?.SetFont(options.GetTextFont(), options.GetTextMaterial(), options.textScale);
-    }
+        GameManager.UpdateFonts();
+    }    
 }
 

@@ -9,37 +9,33 @@ namespace WSKit.Editor
     public class GameAction_ToggleInputDrawer : BaseGameActionDrawer
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-        {
-            return EditorGUIUtility.singleLineHeight;
-        }
+            => EditorGUIUtility.singleLineHeight;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             var stateProp = property.FindPropertyRelative("state");
 
-            // Split into content and wait columns (from BaseGameActionDrawer)
+            // Split into: content area + right-aligned wait column
             SplitForWait(position, out var content, out var waitRect);
 
-            var style = EditorStyles.miniLabel;
-            float lineH = EditorGUIUtility.singleLineHeight;
-            float pad = 4f;
+            float h = EditorGUIUtility.singleLineHeight;
+            float labelW = EditorGUIUtility.labelWidth;
 
-            // Measure text widths
-            float wToggle = style.CalcSize(new GUIContent("Toggle Input")).x;
-            float enumW = 80f; // enough for On/Off/Toggle
-
-            float x = content.x;
-
-            // Layout
-            var rToggleLbl = new Rect(x, content.y, wToggle, lineH); x = rToggleLbl.xMax + pad;
-            var rEnum = new Rect(x, content.y, enumW, lineH);
+            var labelRect = new Rect(content.x, content.y, labelW, h);
+            var fieldRect = new Rect(labelRect.xMax, content.y, content.width - labelW, h);
 
             EditorGUI.BeginProperty(position, label, property);
 
-            // Draw fields
-            EditorGUI.LabelField(rToggleLbl, "Toggle Input", style);
-            EditorGUI.PropertyField(rEnum, stateProp, GUIContent.none);
+            // Standard inspector label (matches style with others)
+            EditorGUI.LabelField(labelRect, "Toggle Input");
 
+            // Enum fills remaining content width
+            int oldIndent = EditorGUI.indentLevel;
+            EditorGUI.indentLevel = 0;
+            EditorGUI.PropertyField(fieldRect, stateProp, GUIContent.none);
+            EditorGUI.indentLevel = oldIndent;
+
+            // Wait checkbox stays aligned on the right
             DrawWait(waitRect, property);
 
             EditorGUI.EndProperty();

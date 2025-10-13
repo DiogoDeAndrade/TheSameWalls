@@ -8638,6 +8638,10 @@ PrefabInstance:
       propertyPath: retrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7526231230027389833, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
+      propertyPath: managedReferences[2624497175541317829].scene
+      value: Room03
+      objectReference: {fileID: 0}
     - target: {fileID: 7557905051966260955, guid: a5c8142baafb90e4a818376dc359edeb, type: 3}
       propertyPath: m_Layer
       value: 3

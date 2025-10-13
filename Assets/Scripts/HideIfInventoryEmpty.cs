@@ -6,7 +6,6 @@ public class HideIfInventoryEmpty : MonoBehaviour
     CanvasGroup         canvasGroup;
     Inventory           inventory;
     InventoryDisplay    inventoryDisplay;
-    bool                inventoryOpen = false;
 
     void Start()
     {
@@ -18,8 +17,12 @@ public class HideIfInventoryEmpty : MonoBehaviour
             inventoryDisplay = FindFirstObjectByType<InventoryDisplay>();
             if (inventoryDisplay) inventoryDisplay.onInventoryToggle += InventoryDisplay_onInventoryToggle;
         }
+        else
+        {
+            canvasGroup.alpha = 0;
+        }
 
-        UpdateInventory();
+            UpdateInventory();
     }
 
     private void InventoryDisplay_onInventoryToggle(bool open)

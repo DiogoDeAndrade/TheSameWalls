@@ -21,3 +21,4 @@ MonoBehaviour:
   additionalSpeakers: []
   volumeRange: {x: 1, y: 1}
   pitchRange: {x: 1, y: 1}
+  defaultTag: {fileID: 11400000, guid: 1c7c89c6a41ab544d891f12bd42d4593, type: 2}

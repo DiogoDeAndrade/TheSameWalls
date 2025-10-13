@@ -492,19 +492,48 @@ MonoBehaviour:
   _referenceObject: {fileID: 0}
   conditions: []
   actions:
-  - rid: 2624497040605053019
+  - rid: 2624497175541317826
+  - rid: 2624497175541317827
+  - rid: 2624497175541317828
+  - rid: 2624497175541317829
   retrigger: 0
   cooldown: 0
   references:
     version: 2
     RefIds:
-    - rid: 2624497040605053019
+    - rid: 2624497175541317826
+      type: {class: GameAction_ToggleInput, ns: WSKit, asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        state: 1
+    - rid: 2624497175541317827
+      type: {class: GameAction_ChangeSound, ns: , asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        soundTag: {fileID: 11400000, guid: e95f1f446ad79ae45b80d2ba26efade9, type: 2}
+        property: 1
+        targetValue: 1.5
+        duration: 4
+        stopOnEnd: 0
+    - rid: 2624497175541317828
+      type: {class: GameAction_ChangeSound, ns: , asm: Assembly-CSharp}
+      data:
+        initialized: 1
+        wait: 0
+        soundTag: {fileID: 11400000, guid: e95f1f446ad79ae45b80d2ba26efade9, type: 2}
+        property: 0
+        targetValue: 0
+        duration: 4
+        stopOnEnd: 0
+    - rid: 2624497175541317829
       type: {class: GameAction_ChangeScene, ns: WSKit, asm: Assembly-CSharp}
       data:
         initialized: 1
         wait: 0
         scene: Room02
-        fadeTime: 1
+        fadeTime: 4
         fadeColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &7697193765951399432
 MonoBehaviour:
