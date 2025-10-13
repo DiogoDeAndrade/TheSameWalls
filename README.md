@@ -19,6 +19,16 @@ The story tackles themes of illness, death and domestic conflict. If you might b
 
 ## Todo
 
+* Get HTML5 build to work
+  * Create custom URP asset for HTML5
+    * Forward+ disabled
+    * HDR off
+    * Disable MSAA (check if needed)
+  * Change cameras
+    * HDR off
+  * Watch effect of Bloom+ACES tonemap
+  * Check probes for HDR maps
+  * Set WebGL to 2.0 (Player Settings)
 * Act 3 
   * Disease gets worse
   * Design and build

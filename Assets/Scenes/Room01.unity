@@ -1169,6 +1169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7338894050641591026, guid: eb31c611e1c1b134c954108c2ee8ab32, type: 3}
+      propertyPath: inputDisableCursor.cursor
+      value: 
+      objectReference: {fileID: 21300000, guid: 6684402c4465670438e94081b68b78ce, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

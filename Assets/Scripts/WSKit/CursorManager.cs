@@ -10,11 +10,15 @@ namespace WSKit
         [SerializeField] private Sprite defaultCursor;
         [SerializeField] private float fadeTime = 0.15f;
 
-        Image cursorImage;
-        RectTransform rectTransform;
-        CanvasGroup canvasGroup;
-        Vector2 defaultSize = Vector2.zero;
-        Color defaultColor = Color.white;
+        Image           cursorImage;
+        RectTransform   rectTransform;
+        CanvasGroup     canvasGroup;
+        Vector2         defaultSize = Vector2.zero;
+        Color           defaultColor = Color.white;
+
+        Sprite  currentCursor;
+        Color   currentColor;
+        Vector2 currentSize;
 
         void Start()
         {
@@ -65,6 +69,10 @@ namespace WSKit
             {
                 rectTransform.sizeDelta = size;
             }
+
+            currentCursor = cursor;
+            currentColor = color;
+            currentSize = size;
         }
 
         public void SetCursor(bool show)

@@ -21,14 +21,18 @@ namespace WSKit
         private PlayerInput        playerInput;
         [SerializeField, InputPlayer(nameof(playerInput)), InputButton] 
         private UC.InputControl    interactControl;
+        [SerializeField] 
+        private CursorDef           inputDisableCursor;
         [SerializeField]
         private bool               debugMode;
 
         CursorManager cursorManager;
+        FPSController inputController;
         GameObject    referenceObject => masterInteractionObject ? masterInteractionObject : gameObject;
 
         private void Start()
         {
+            inputController = GetComponentInParent<FPSController>();
             cursorManager = FindFirstObjectByType<CursorManager>();
             interactControl.playerInput = playerInput;
         }
@@ -84,7 +88,10 @@ namespace WSKit
                 // Handle cursor
                 if (cursorManager)
                 {
-                    cursorManager.SetCursor(activeInteraction.cursor);
+                    if (inputController.enabled)
+                        cursorManager.SetCursor(activeInteraction.cursor);
+                    else
+                        cursorManager.SetCursor(inputDisableCursor);
                 }
 
                 // Interact
@@ -99,7 +106,10 @@ namespace WSKit
             {
                 if (cursorManager)
                 {
-                    cursorManager.SetCursor(null);
+                    if (inputController.enabled)
+                        cursorManager.SetCursor(null);
+                    else
+                        cursorManager.SetCursor(inputDisableCursor);
                 }
             }
         }

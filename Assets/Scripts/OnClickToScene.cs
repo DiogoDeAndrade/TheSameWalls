@@ -3,13 +3,20 @@ using UC;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OnClickToScene
-    : MonoBehaviour
+public class OnClickToScene : MonoBehaviour
 {
     [SerializeField, Scene] private string sceneName;
+    [SerializeField] private bool disableCursor;
 
+    private void Start()
+    {
+        if (disableCursor)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.anyKeyDown)

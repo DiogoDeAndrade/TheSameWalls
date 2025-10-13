@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Title
+  disableCursor: 1
 --- !u!114 &982365857
 MonoBehaviour:
   m_ObjectHideFlags: 0
