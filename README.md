@@ -79,6 +79,10 @@ The story tackles themes of illness, death and domestic conflict. If you might b
 
 - [Exploding lightbulb 1](https://freesound.org/people/jorickhoofd/sounds/179265/) by [jorickhoofd](http://jorickbronius.wordpress.com/), licensed through [CC-BY 4.0]
 - [Drawer Open and Close](https://freesound.org/people/RoivasUGO/sounds/231455/) by [RoivasUGO](https://freesound.org/people/RoivasUGO/), licensed through [CC0]
+- [Knocking on Wood Door (1)](https://freesound.org/people/Flem0527/sounds/629987/) by [Flem0527](https://freesound.org/people/Flem0527/), licensed through [CC0]
+- [PASOS_DENTRO](https://freesound.org/people/Sainthh/sounds/396854/) by [Sainthh](https://freesound.org/people/Sainthh/), licensed through [CC-BY 3.0]
+- [Door opening and closing 8](https://freesound.org/people/JakLocke/sounds/261109/) by [JakLocke](https://freesound.org/people/JakLocke/), licensed through [CC-BY 4.0]
+- [Kissing](https://freesound.org/people/jone_oost/sounds/366707/) by [jone_oost](https://freesound.org/people/jone_oost/), licensed through [CC-BY-NC 3.0]
 - Voices by [ElevenLab](https://elevenlabs.io/)
 - Music by [Suno](https://suno.com/)
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.

@@ -53,7 +53,13 @@ PrefabInstance:
       value: Environment (Act 3) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5759546969671496535, guid: c365291fde50800428358c4293e68121, type: 3}
+    - {fileID: 3592186587430467807, guid: c365291fde50800428358c4293e68121, type: 3}
+    - {fileID: 7747619829125294187, guid: c365291fde50800428358c4293e68121, type: 3}
+    - {fileID: 169961517958641811, guid: c365291fde50800428358c4293e68121, type: 3}
+    - {fileID: 4618087658106467555, guid: c365291fde50800428358c4293e68121, type: 3}
+    - {fileID: 2983549606450453566, guid: c365291fde50800428358c4293e68121, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c365291fde50800428358c4293e68121, type: 3}

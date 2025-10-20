@@ -277,6 +277,10 @@ MonoBehaviour:
     keyPositive: 275
     keyNegative: 276
     inputAction: Interact
+  inputDisableCursor:
+    cursor: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: {x: 0, y: 0}
   debugMode: 0
 --- !u!1 &7817009331978299386
 GameObject:
@@ -291,6 +295,7 @@ GameObject:
   - component: {fileID: 5330477987929451828}
   - component: {fileID: 317430377766597233}
   - component: {fileID: 3388057336177328043}
+  - component: {fileID: 7201297931937820752}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -433,3 +438,25 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
+--- !u!114 &7201297931937820752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817009331978299386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63d140a77cf9cc4f88610a0e40b7867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 3388057336177328043}
+  exposureMode: 0
+  exposureKey: Exposure
+  contrastMode: 0
+  contrastKey: Contrast
+  hueShiftMode: 0
+  hueShiftKey: HueShift
+  saturationMode: 0
+  saturationKey: Saturation
+  updateAllFrames: 0

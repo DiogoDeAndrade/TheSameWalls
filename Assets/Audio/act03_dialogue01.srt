@@ -1,0 +1,91 @@
+﻿1
+00:00:00,000 --> 00:00:00,948
+[speaker=none]*knock on door*
+
+2
+00:00:02,057 --> 00:00:04,308
+[speaker=none]*footsteps*
+
+3
+00:00:04,696 --> 00:00:05,432
+ [speaker=none]*door opens*
+
+4
+00:00:06,297 --> 00:00:09,725
+Oh… hi.
+I wasn’t expecting you.
+
+5
+00:00:09,931 --> 00:00:13,451
+ [speaker=Neighbor]I just wanted to check in.
+How’s she doing?
+
+6
+00:00:14,171 --> 00:00:19,325
+Back at the hospital again.
+They’re trying something new… but…
+
+7
+00:00:19,954 --> 00:00:24,080
+*sigh* It’s just getting harder to pretend, you know?
+
+8
+00:00:24,800 --> 00:00:26,280
+[speaker=Neighbor]She’s a fighter.
+
+9
+00:00:26,834 --> 00:00:29,897
+Yeah. That’s what they all say.
+
+10
+00:00:30,480 --> 00:00:32,948
+Fighters.
+Like that makes a difference.
+
+11
+00:00:34,605 --> 00:00:37,005
+I don’t even know who I am when she’s not here.
+
+12
+00:00:37,848 --> 00:00:40,040
+But when she is… it’s worse.
+
+13
+00:00:40,752 --> 00:00:44,672
+I’m supposed to be strong.
+For her. For him.
+
+14
+00:00:45,248 --> 00:00:48,392
+ But I’m…
+I’m breaking too.
+
+15
+00:00:49,040 --> 00:00:50,832
+And there’s no one left to lean on.
+
+16
+00:00:52,950 --> 00:00:55,368
+[speaker=Neighbor]You don’t have to do this alone.
+
+17
+00:00:56,336 --> 00:00:58,848
+…Yeah. Maybe I don’t.
+
+18
+00:00:59,368 --> 00:01:02,936
+[speaker=none]*rustling sounds*
+
+19
+00:01:02,940 --> 00:01:06,320
+[speaker=Neighbor]If you need anything at all…
+I’m here.
+
+20
+00:01:08,304 --> 00:01:09,000
+[speaker=none]*door closes*
+
+21
+00:01:10,752 --> 00:01:13,800
+I just hope… it’s the last time.
+
