@@ -2,6 +2,7 @@ using UnityEngine;
 using WSKit;
 
 [System.Serializable]
+[GameActionName("One Room/Time From Start")]
 public class Condition_TimeFromStart : Condition
 {
     [SerializeField] private float elapsedTime = 1.0f;

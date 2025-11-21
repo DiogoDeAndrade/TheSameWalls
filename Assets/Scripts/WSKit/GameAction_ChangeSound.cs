@@ -4,6 +4,7 @@ using UnityEngine;
 using WSKit;
 
 [System.Serializable]
+[GameActionName("WSL/Change Sound")]
 public class GameAction_ChangeSound : GameAction
 {
     public enum Property { Volume, Pitch, Disable };

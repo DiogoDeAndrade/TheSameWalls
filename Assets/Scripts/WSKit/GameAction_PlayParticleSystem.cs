@@ -6,6 +6,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Play Particle System")]
     public class GameAction_PlayParticleSystem: GameAction
     {
         [SerializeField] private ParticleSystem particleSystem;

@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Remove Item")]
     public class GameAction_RemoveItem : GameAction
     {
         [SerializeField] private Item   item;

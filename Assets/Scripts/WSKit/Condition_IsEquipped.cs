@@ -5,6 +5,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Is Equipped")]
     public class Condition_IsEquipped : Condition
     {
         [SerializeField] private Hypertag slot;

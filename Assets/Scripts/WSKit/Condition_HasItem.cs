@@ -5,6 +5,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Has Item")]
     public class Condition_HasItem : Condition
     {
         [SerializeField] private Item item;

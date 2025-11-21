@@ -6,6 +6,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Toggle Object")]
     public class GameAction_ToggleObject : GameAction
     {
         public enum State { Enable, Disable, Toggle };

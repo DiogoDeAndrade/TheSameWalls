@@ -5,6 +5,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Has Token")]
     public class Condition_HasToken : Condition
     {
         [SerializeField] private Hypertag token;

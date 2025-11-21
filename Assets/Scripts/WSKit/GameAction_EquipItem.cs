@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Equip Item")]
     public class GameAction_EquipItem : GameAction
     {
         [SerializeField] private Hypertag   slot;

@@ -6,6 +6,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Set Material Property")]
     public class GameAction_SetMaterialProperty : GameAction
     {
         

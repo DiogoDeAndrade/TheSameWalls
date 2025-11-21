@@ -9,6 +9,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Change Scene")]
     public class GameAction_ChangeScene : GameAction
     {
         [SerializeField, Scene] private string  scene;

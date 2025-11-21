@@ -54,9 +54,9 @@ namespace WSKit
             {
                 RemoveEquippedItem();
 
-                if (item.scenePrefab != null)
+                if (item.GetScenePrefab() != null)
                 {
-                    equippedItem = Instantiate(item.scenePrefab, handSlotTransform);
+                    equippedItem = Instantiate(item.GetScenePrefab(), handSlotTransform);
                 }
 
                 lastItemEquipped = item;

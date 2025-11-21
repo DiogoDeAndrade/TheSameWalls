@@ -4,6 +4,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Numeric")]
     public class Condition_Numeric : Condition
     {
         public enum ComparisonOp

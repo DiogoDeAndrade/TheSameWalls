@@ -6,6 +6,7 @@ using UnityEngine;
 namespace WSKit
 {
     [System.Serializable]
+    [GameActionName("WSL/Set Animation Property")]
     public class GameAction_SetAnimatorProperty : GameAction
     {
         [SerializeField] private Animator animator;

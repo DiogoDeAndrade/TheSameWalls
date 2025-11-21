@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Add Token")]
     public class GameAction_AddToken : GameAction
     {
         [SerializeField] private Hypertag token;

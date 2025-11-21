@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Fade")]
     public class GameAction_Fade : GameAction
     {
         public enum State { In, Out };

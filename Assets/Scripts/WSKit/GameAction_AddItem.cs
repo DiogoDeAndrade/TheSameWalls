@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Add Item")]
     public class GameAction_AddItem : GameAction
     {
         [SerializeField] private Item   item;

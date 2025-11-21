@@ -19,7 +19,7 @@ namespace WSKit.Editor
                     .Where(t => !t.IsAbstract && !t.IsGenericType && t.GetConstructor(Type.EmptyTypes) != null)
                     .Select(t =>
                     {
-                        var nice = NicifyTypeName(t, baseType);
+                        var nice = GetDisplayName(t, baseType);
                         return (nice, t);
                     })
                     .OrderBy(t => t.nice, StringComparer.OrdinalIgnoreCase)
@@ -30,6 +30,21 @@ namespace WSKit.Editor
 
             return list;
         }
+
+        private static string GetDisplayName(Type type, Type baseType)
+        {
+            // Any attribute derived from PolymorphicNameAttribute is accepted:
+            var attr = type
+                .GetCustomAttributes(typeof(PolymorphicNameAttribute), inherit: false)
+                .FirstOrDefault() as PolymorphicNameAttribute;
+
+            if (attr != null && !string.IsNullOrWhiteSpace(attr.Path))
+                return attr.Path; // e.g. "WSL/Tokens/Add" -> GenericMenu creates submenus
+
+            // Fallback = old behaviour
+            return NicifyTypeName(type, baseType);
+        }
+
 
         private static string NicifyTypeName(Type type, Type baseType)
         {

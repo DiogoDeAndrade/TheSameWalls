@@ -6,6 +6,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Wait")]
     public class GameAction_Wait : GameAction
     {
         [SerializeField] private float      waitTime;

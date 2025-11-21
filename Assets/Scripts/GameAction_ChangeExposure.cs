@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Change Exposure")]
     public class GameAction_ChangeExposure: GameAction
     {
         [SerializeField] private float exposure = 4.0f;

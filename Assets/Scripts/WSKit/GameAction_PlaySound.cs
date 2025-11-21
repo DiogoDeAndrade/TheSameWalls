@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Play Sound")]
     public class GameAction_PlaySound : GameAction
     {
         [SerializeField] private SoundDef sound;

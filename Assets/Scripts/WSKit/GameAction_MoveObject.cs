@@ -7,6 +7,7 @@ namespace WSKit
 {
 
     [System.Serializable]
+    [GameActionName("WSL/Move Object")]
     public class GameAction_MoveObject : GameAction
     {
         [SerializeField] 
