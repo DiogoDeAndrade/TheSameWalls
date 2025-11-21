@@ -1,6 +1,5 @@
-using JetBrains.Annotations;
 using System.Collections;
-using UC;
+using UC.Interaction;
 using UnityEngine;
 
 namespace WSKit

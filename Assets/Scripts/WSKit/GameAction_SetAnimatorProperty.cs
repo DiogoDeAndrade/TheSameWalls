@@ -2,6 +2,7 @@
 using NaughtyAttributes;
 using System.Collections;
 using UnityEngine;
+using UC.Interaction;
 
 namespace WSKit
 {

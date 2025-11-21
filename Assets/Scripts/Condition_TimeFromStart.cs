@@ -1,5 +1,5 @@
 using UnityEngine;
-using WSKit;
+using UC.Interaction;
 
 [System.Serializable]
 [GameActionName("One Room/Time From Start")]

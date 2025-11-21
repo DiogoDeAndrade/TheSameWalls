@@ -1,8 +1,8 @@
-// Assets/Editor/OnEventEditor.cs
-using System;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
+using UC.Interaction;
+using UC.Interaction.Editor;
 
 namespace WSKit.Editor
 {

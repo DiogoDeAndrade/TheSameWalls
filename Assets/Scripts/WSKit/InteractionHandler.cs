@@ -1,5 +1,6 @@
 using System;
 using UC;
+using UC.Interaction;
 using UnityEngine;
 using UnityEngine.InputSystem;
 

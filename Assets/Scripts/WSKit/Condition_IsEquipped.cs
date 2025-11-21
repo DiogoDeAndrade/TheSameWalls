@@ -1,5 +1,6 @@
 using UC;
 using UnityEngine;
+using UC.Interaction;
 
 namespace WSKit
 {

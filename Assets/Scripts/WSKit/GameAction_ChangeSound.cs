@@ -1,7 +1,7 @@
 using System.Collections;
 using UC;
 using UnityEngine;
-using WSKit;
+using UC.Interaction;
 
 [System.Serializable]
 [GameActionName("WSL/Change Sound")]

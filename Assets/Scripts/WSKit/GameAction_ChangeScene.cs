@@ -4,6 +4,7 @@ using UC;
 using System.Collections;
 using NaughtyAttributes;
 using UnityEngine.SceneManagement;
+using UC.Interaction;
 
 namespace WSKit
 {

@@ -2,6 +2,7 @@
 using System.Collections;
 using UC;
 using UnityEngine;
+using UC.Interaction;
 
 namespace WSKit
 {

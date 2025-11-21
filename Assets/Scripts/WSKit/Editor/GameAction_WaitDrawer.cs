@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityEngine;
-using WSKit;
+using UC.Interaction.Editor;
 
 namespace WSKit.Editor
 {
